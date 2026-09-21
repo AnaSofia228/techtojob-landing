@@ -112,9 +112,12 @@ import { DiscordGlyph } from "@/components/ui/icons";
 
 ## 5. Commits de la rama
 
-- `a6ce7d7` — `feat(ui): extract shared brand and social icons`
-- `42afb63` — `feat(ui): add Button component with primary and secondary variants`
-- `50b4cec` — `feat(footer): implement structured 4-column footer`
+- `c0d1450` — `feat(ui): extract shared brand and social icons`
+- `145f6b1` — `feat(ui): add Button component with primary and secondary variants`
+- `f4ac366` — `feat(footer): implement structured 4-column footer`
+
+> Los commits de documentación (`docs: …`) no se listan para evitar referencias circulares.
+> ⚠️ Los SHAs fueron reescritos al corregir la autoría de los commits (autoría corregida a Rubén); si clonaste antes de este cambio, sincroniza con `git pull --rebase`.
 
 PR abierto: **https://github.com/AnaSofia228/techtojob-landing/pull/2** (`feature/ui-kit-footer → main`)
 PR relacionado: **https://github.com/AnaSofia228/techtojob-landing/pull/1** (`feature/header → main`)
