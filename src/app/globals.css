@@ -11,6 +11,8 @@
   --ttj-canvas: #ffffff;
   --ttj-ink: #111416;
   --ttj-ink-alt: #191c1e;
+  /* Headroom so anchor jumps clear the sticky header (~60px tall). */
+  --ttj-header-offset: 5rem;
 }
 
 @theme inline {
@@ -20,6 +22,18 @@
   --color-ink: var(--ttj-ink);
   --color-ink-alt: var(--ttj-ink-alt);
   --font-sans: var(--font-sora);
+}
+
+/* Anchor targets land below the sticky header; smooth scroll only when the
+ * user has not requested reduced motion (WCAG 2.3.3). */
+html {
+  scroll-padding-top: var(--ttj-header-offset);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
 }
 
 body {
