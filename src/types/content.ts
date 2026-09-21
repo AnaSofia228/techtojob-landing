@@ -38,6 +38,14 @@ export type Messages = {
       items: Record<string, string>;
     };
     cta: string;
+    aria: {
+      logo: string;
+      primary: string;
+      more: string;
+      menu: string;
+      openMenu: string;
+      closeMenu: string;
+    };
   };
   sections: Record<SectionId, string>;
 };

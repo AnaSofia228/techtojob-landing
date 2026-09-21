@@ -19,10 +19,18 @@
         "newsletter": "Newsletter"
       }
     },
-    "cta": "Unirse al Discord"
+    "cta": "Unirse al Discord",
+    "aria": {
+      "logo": "TechToJob, volver al inicio",
+      "primary": "Navegación principal",
+      "more": "Secciones adicionales",
+      "menu": "Menú de navegación",
+      "openMenu": "Abrir menú de navegación",
+      "closeMenu": "Cerrar menú de navegación"
+    }
   },
   "sections": {
-    "header": "Header",
+    "header": "Encabezado",
     "hero": "Hero",
     "como-funciona": "Cómo funciona",
     "talento": "Talento",
