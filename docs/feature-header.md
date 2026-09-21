@@ -88,8 +88,13 @@ Definidos en `src/app/globals.css` (variables `--ttj-*` + `@theme inline`):
 
 ## 6. Commits de la rama
 
-- `161243b` — `feat(header): implement sticky nav, Más dropdown and Discord CTA`
-- `b845e7b` — `feat(header): offset anchor targets below sticky nav`
+- `07dc996` — `feat(header): implement sticky nav, Más dropdown and Discord CTA`
+- `e2eaaf3` — `feat(header): offset anchor targets below sticky nav`
+- `bcb2177` — `chore: silence VS Code unknownAtRules for Tailwind v4`
+- `e16a31a` — `feat(ui): add brand-themed animation toolkit`
+
+> Los commits de documentación (`docs: …`) no se listan para evitar referencias circulares.
+> ⚠️ Los SHAs fueron reescritos al corregir la autoría de los commits (autoría corregida a Rubén); si clonaste antes de este cambio, sincroniza con `git pull --rebase`.
 
 PR abierto: **https://github.com/AnaSofia228/techtojob-landing/pull/1** (`feature/header → main`)
 
