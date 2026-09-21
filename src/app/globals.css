@@ -1,0 +1,29 @@
+/**
+ * Global stylesheet.
+ * Imports Tailwind CSS and declares the brand design tokens (colors and the
+ * Sora font family) used across the landing. No section-specific styles here.
+ */
+@import "tailwindcss";
+
+:root {
+  --ttj-surface: #2f3436;
+  --ttj-accent: #84c0bf;
+  --ttj-canvas: #ffffff;
+  --ttj-ink: #111416;
+  --ttj-ink-alt: #191c1e;
+}
+
+@theme inline {
+  --color-surface: var(--ttj-surface);
+  --color-accent: var(--ttj-accent);
+  --color-canvas: var(--ttj-canvas);
+  --color-ink: var(--ttj-ink);
+  --color-ink-alt: var(--ttj-ink-alt);
+  --font-sans: var(--font-sora);
+}
+
+body {
+  background-color: var(--color-ink);
+  color: var(--color-canvas);
+  font-family: var(--font-sans), system-ui, sans-serif;
+}

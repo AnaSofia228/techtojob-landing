@@ -1,0 +1,38 @@
+{
+  "_comment": "Spanish UI copy catalog for the TechToJob landing. All user-facing text lives here (never hardcoded in components) and is typed by src/types/content.ts. Values are kept in Spanish; add locales by creating sibling files such as en.json.",
+  "site": {
+    "name": "TechToJob"
+  },
+  "nav": {
+    "primary": {
+      "como-funciona": "Cómo funciona",
+      "talento": "Talento",
+      "empresas": "Empresas",
+      "torneos": "Torneos",
+      "comunidad": "Comunidad"
+    },
+    "more": {
+      "label": "Más",
+      "items": {
+        "testimonios": "Testimonios",
+        "noticias": "Noticias",
+        "newsletter": "Newsletter"
+      }
+    },
+    "cta": "Unirse al Discord"
+  },
+  "sections": {
+    "header": "Header",
+    "hero": "Hero",
+    "como-funciona": "Cómo funciona",
+    "talento": "Talento",
+    "empresas": "Empresas",
+    "torneos": "Torneos",
+    "comunidad": "Comunidad",
+    "testimonios": "Testimonios",
+    "noticias": "Noticias",
+    "newsletter": "Newsletter",
+    "cierre": "Cierre",
+    "footer": "Footer"
+  }
+}
