@@ -29,6 +29,51 @@
       "closeMenu": "Cerrar menú de navegación"
     }
   },
+  "footer": {
+    "tagline": "Talento técnico conectado por lo que construyes, no por el CV.",
+    "labels": {
+      "como-funciona": "Cómo funciona",
+      "talento": "Talento",
+      "torneos": "Torneos",
+      "empresas": "Empresas",
+      "comunidad": "Comunidad",
+      "discord": "Únete al Discord",
+      "testimonios": "Testimonios",
+      "noticias": "Noticias",
+      "newsletter": "Newsletter",
+      "legal-1": "Aviso legal",
+      "legal-2": "Política de privacidad",
+      "legal-3": "Términos de uso"
+    },
+    "columns": [
+      {
+        "heading": "Talento",
+        "links": ["como-funciona", "talento", "torneos"]
+      },
+      {
+        "heading": "Empresas",
+        "links": ["empresas", "talento", "comunidad"]
+      },
+      {
+        "heading": "Comunidad",
+        "links": ["discord", "testimonios", "noticias", "newsletter"]
+      },
+      {
+        "heading": "Legal",
+        "links": ["legal-1", "legal-2", "legal-3"],
+        "note": "Próximamente"
+      }
+    ],
+    "social": "Redes sociales",
+    "networks": {
+      "discord": "Discord",
+      "linkedin": "LinkedIn",
+      "x": "X (Twitter)",
+      "instagram": "Instagram"
+    },
+    "copyright": "Todos los derechos reservados.",
+    "accessibility": "Accesibilidad: diseñado cumpliendo WCAG AA — navegable por teclado, con foco visible y responsive en móvil, tablet y escritorio."
+  },
   "sections": {
     "header": "Encabezado",
     "hero": "Hero",
@@ -41,6 +86,6 @@
     "noticias": "Noticias",
     "newsletter": "Newsletter",
     "cierre": "Cierre",
-    "footer": "Footer"
+    "footer": "Pie de página"
   }
 }

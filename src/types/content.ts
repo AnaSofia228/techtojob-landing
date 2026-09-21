@@ -48,4 +48,13 @@ export type Messages = {
     };
   };
   sections: Record<SectionId, string>;
+  footer: {
+    tagline: string;
+    labels: Record<string, string>;
+    columns: { heading: string; links: string[]; note?: string }[];
+    networks: Record<string, string>;
+    social: string;
+    copyright: string;
+    accessibility: string;
+  };
 };
