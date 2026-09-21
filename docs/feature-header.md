@@ -129,14 +129,28 @@ Definidas en `src/app/globals.css` como tokens de Tailwind v4 → generan utilit
 
 **Ejemplos para el Hero:**
 ```tsx
-// CTA primario
-<a href={SOCIAL_LINKS.discord} className="animate-glow bg-accent ... text-ink ...">
+// CTA PRIMARIO — acento, con halo pulsante permanente
+<a
+  href="https://discord.gg/h9FFgKdkRd"
+  className="inline-flex animate-glow items-center gap-2 rounded-md bg-accent px-6 py-3 text-sm font-semibold text-ink transition hover:-translate-y-0.5 hover:bg-accent/90 focus-visible:ring-2 focus-visible:ring-canvas focus-visible:ring-offset-2"
+>
+  {/* ✓ DiscordGlyph aquí */}
   Unirse al Discord
+</a>
+
+// CTA SECUNDARIO — blanco, halo solo al pasar el ratón (hover:animate-glow)
+<a
+  href="#torneos"
+  className="inline-flex items-center gap-2 rounded-md bg-canvas px-6 py-3 text-sm font-semibold text-ink transition hover:-translate-y-0.5 hover:animate-glow focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2"
+>
+  Explorar torneos
 </a>
 
 // Elemento de prueba social
 <span className="animate-float inline-flex ...">✨ +300 devs</span>
 ```
+
+> **Nota:** `hover:animate-glow` activa el halo teal solo mientras el cursor está sobre el elemento — perfecto para el CTA secundario blanco. Verificado que Tailwind v4 lo genera correctamente.
 
 **Garantías:**
 - ✅ Todas las animaciones se **desactivan** con `prefers-reduced-motion: reduce` (guardia global en `globals.css`).
