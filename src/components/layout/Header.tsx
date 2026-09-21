@@ -232,7 +232,7 @@ export function Header() {
             href={SOCIAL_LINKS.discord}
             target="_blank"
             rel="noopener noreferrer"
-            className="hidden items-center gap-2 rounded-md bg-accent px-4 py-2 text-sm font-semibold text-ink transition-colors hover:bg-accent/90 focus-visible:ring-2 focus-visible:ring-canvas focus-visible:ring-offset-2 sm:inline-flex"
+            className="hidden animate-glow items-center gap-2 rounded-md bg-accent px-4 py-2 text-sm font-semibold text-ink transition hover:-translate-y-0.5 hover:bg-accent/90 focus-visible:ring-2 focus-visible:ring-canvas focus-visible:ring-offset-2 sm:inline-flex"
           >
             <DiscordGlyph className="h-4 w-4" />
             <span>{messages.nav.cta}</span>
@@ -242,7 +242,7 @@ export function Header() {
             target="_blank"
             rel="noopener noreferrer"
             aria-label={messages.nav.cta}
-            className="inline-flex h-10 w-10 items-center justify-center rounded-md bg-accent text-ink transition-colors hover:bg-accent/90 focus-visible:ring-2 focus-visible:ring-canvas focus-visible:ring-offset-2 sm:hidden"
+            className="inline-flex h-10 w-10 animate-glow items-center justify-center rounded-md bg-accent text-ink transition hover:-translate-y-0.5 hover:bg-accent/90 focus-visible:ring-2 focus-visible:ring-canvas focus-visible:ring-offset-2 sm:hidden"
           >
             <DiscordGlyph className="h-5 w-5" />
           </a>

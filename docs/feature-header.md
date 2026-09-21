@@ -117,4 +117,31 @@ gh pr create --base main             # abrir PR
 
 ---
 
+## 9. Animaciones disponibles (toolkit) 🎬
+
+Definidas en `src/app/globals.css` como tokens de Tailwind v4 → generan utilities `animate-*` directas. Todas sutiles, temáticas (terminal/teal) y no intrusivas.
+
+| Utility | Efecto | Uso sugerido |
+|---|---|---|
+| `animate-caret` | Cursor de terminal parpadeando (1.2s) | Resaltar parte del titular o el `>_` de la marca |
+| `animate-glow` | Halo teal pulsante lento (4s) | CTA primario «Unirse al Discord» |
+| `animate-float` | Flotación vertical suave (6s) | Insignias/ilustraciones del Hero |
+
+**Ejemplos para el Hero:**
+```tsx
+// CTA primario
+<a href={SOCIAL_LINKS.discord} className="animate-glow bg-accent ... text-ink ...">
+  Unirse al Discord
+</a>
+
+// Elemento de prueba social
+<span className="animate-float inline-flex ...">✨ +300 devs</span>
+```
+
+**Garantías:**
+- ✅ Todas las animaciones se **desactivan** con `prefers-reduced-motion: reduce` (guardia global en `globals.css`).
+- ✅ Nada se mueve fuera de su zona (solo opacidad, sombra y translateY ≤ 8px).
+
+---
+
 *Para el equipo: si haces cambios, actualiza este documento antes de mergear.* 💜
