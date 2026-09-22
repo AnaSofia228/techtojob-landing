@@ -18,9 +18,14 @@ const MORE_BUTTON_ID = "boton-mas";
 const MORE_MENU_ID = "menu-mas";
 const MOBILE_MENU_ID = "menu-movil";
 
+// Desktop nav links: on hover the text turns accent teal and an underline
+// wipes in from the left (::after + scale-x), both with a soft transition.
 const navLinkClasses =
-  "inline-flex items-center rounded-md px-3 py-2 text-sm font-medium " +
-  "text-canvas transition-colors hover:bg-canvas/10 " +
+  "relative inline-flex items-center rounded-md px-3 py-2 text-sm font-medium " +
+  "text-canvas transition-colors duration-300 hover:text-accent " +
+  "after:absolute after:inset-x-3 after:bottom-1.5 after:h-px after:origin-left " +
+  "after:scale-x-0 after:bg-accent after:transition-transform after:duration-300 " +
+  "after:ease-out hover:after:scale-x-100 " +
   "focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2";
 
 /** Discord mark (simple-icons, MIT). */
