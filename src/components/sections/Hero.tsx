@@ -12,9 +12,9 @@ import { useEffect, useRef, type ComponentType } from "react";
 import { Button } from "@/components/ui/Button";
 import {
   BoltGlyph,
-  CodeGlyph,
   DiscordGlyph,
-  ShieldGlyph,
+  HeroCodeGlyph,
+  HeroShieldGlyph,
   TrophyGlyph,
   type IconProps,
 } from "@/components/ui/icons";
@@ -27,8 +27,8 @@ type BadgeKey = keyof typeof messages.hero.badges;
 const BADGE_KEYS: BadgeKey[] = ["code", "ats", "prizes"];
 
 const BADGE_ICONS: Record<BadgeKey, ComponentType<IconProps>> = {
-  code: CodeGlyph,
-  ats: ShieldGlyph,
+  code: HeroCodeGlyph,
+  ats: HeroShieldGlyph,
   prizes: TrophyGlyph,
 };
 
@@ -357,7 +357,7 @@ export function Hero() {
         </div>
 
         <figure aria-label={dashboard.label} className="mx-auto w-full max-w-md lg:mx-0">
-          <div className="overflow-hidden rounded-2xl border border-canvas/10 bg-ink-alt shadow-2xl">
+          <div className="cursor-default overflow-hidden rounded-2xl border border-canvas/10 bg-ink-alt shadow-2xl transition-all duration-300 ease-out hover:border-accent hover:shadow-[0_0_30px_rgba(132,192,191,0.15),0_25px_50px_-12px_rgba(0,0,0,0.45)] motion-safe:hover:-translate-y-0.5">
             {/* Header: macOS-style dots, session path and live status pill. */}
             <div className="flex items-center justify-between gap-3 border-b border-canvas/10 px-4 py-3">
               <div className="flex min-w-0 items-center gap-2">

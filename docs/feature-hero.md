@@ -75,6 +75,7 @@ Tarjeta autocontenida dentro de `Hero.tsx` (sin estado), escala compacta para la
 
 - **Ritmo compacto:** cuerpo `px-4 pb-4`, terminal `mt-4 mb-4` y actividad `my-2`; la separación del footer respecto al torneo la aporta el `pb-4` del cuerpo junto al `border-t` existente.
 - **Posición:** el card se centra en móvil (`mx-auto`) y se pega a la derecha en desktop (`lg:mx-0`) dentro de su columna de `28rem`.
+- **Hover:** el contenedor exterior (no cada sección) aplica `transition-all duration-300 ease-out`, `hover:border-accent`, un glow teal `hover:shadow-[0_0_30px_rgba(132,192,191,0.15),0_25px_50px_-12px_rgba(0,0,0,0.45)]` y `motion-safe:hover:-translate-y-0.5` (lift de 2px solo si no hay `prefers-reduced-motion`). Cursor `default` (el card no es clickeable). No interfiere con el canvas: este es `pointer-events-none z-0` y el contenido `relative z-10`.
 
 - **Tokens del tema** (`bg-ink` / `bg-ink-alt` / `bg-surface` / `bg-canvas` / `text-canvas` / `text-accent`); sin hex sueltos ni `zinc`.
 - **Excepción de animación:** el punto usa `animate-pulse` (utilidad por defecto de Tailwind, fuera del toolkit), congelada igualmente por la guarda global `prefers-reduced-motion: reduce`.
@@ -139,6 +140,7 @@ Capa `<canvas>` absoluta (`inset-0`, `z-0`, `pointer-events-none`, `aria-hidden`
 - `feat(hero): add subtle cursor parallax to background grid`
 - `feat(hero): add canvas glow and ripples over the grid`
 - `style(hero): make canvas ripples more visible`
+- `feat(hero): add hover lift and teal glow to the dashboard card`
 
 > Se listan por **mensaje**, no por SHA, porque los rebases de sincronización cambian los hashes.
 

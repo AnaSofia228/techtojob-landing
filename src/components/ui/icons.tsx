@@ -9,11 +9,11 @@
 export type IconProps = { className?: string };
 
 /**
- * Generic feature glyphs (Lucide, ISC).
+ * Hero feature glyphs (Lucide, ISC).
  * Stroke-based, monochrome and decorative, so section components never need
  * to inline their own SVG. Used by the hero micro-badges.
  */
-export function CodeGlyph({ className = "h-4 w-4" }: IconProps) {
+export function HeroCodeGlyph({ className = "h-4 w-4" }: IconProps) {
   return (
     <svg
       viewBox="0 0 24 24"
@@ -32,7 +32,7 @@ export function CodeGlyph({ className = "h-4 w-4" }: IconProps) {
 }
 
 /** Shield outline: no ATS filter bias. */
-export function ShieldGlyph({ className = "h-4 w-4" }: IconProps) {
+export function HeroShieldGlyph({ className = "h-4 w-4" }: IconProps) {
   return (
     <svg
       viewBox="0 0 24 24"
