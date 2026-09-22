@@ -2,16 +2,17 @@
 
 /**
  * Site header.
- * Sticky navigation bar (`#header`) with the brand mark, the five primary
+ * Sticky navigation bar (`#header`) with the official brand logo, the five primary
  * links, an accessible "Más" disclosure dropdown (`aria-haspopup` +
  * `aria-expanded` + `aria-controls`), the Discord CTA and a responsive
  * mobile menu. Outside clicks and Escape close any open menu; opening the
  * dropdown moves focus to its first link.
  */
+import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
 import { moreNav, primaryNav } from "@/data/navigation";
 import { messages } from "@/lib/content";
-import { SITE_NAME, SOCIAL_LINKS } from "@/lib/site";
+import { SOCIAL_LINKS } from "@/lib/site";
 
 const MORE_BUTTON_ID = "boton-mas";
 const MORE_MENU_ID = "menu-mas";
@@ -21,22 +22,6 @@ const navLinkClasses =
   "inline-flex items-center rounded-md px-3 py-2 text-sm font-medium " +
   "text-canvas transition-colors hover:bg-canvas/10 " +
   "focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2";
-
-/** Terminal-prompt brand mark ("❯_") on the accent tile. */
-function BrandMark() {
-  return (
-    <svg viewBox="0 0 28 28" className="h-7 w-7 shrink-0" aria-hidden="true">
-      <rect width="28" height="28" rx="7" fill="var(--color-accent)" />
-      <path
-        d="M9 9l6-3M9 11l6 3M8 20h12"
-        fill="none"
-        stroke="var(--color-ink)"
-        strokeWidth={3}
-        strokeLinecap="round"
-      />
-    </svg>
-  );
-}
 
 /** Discord mark (simple-icons, MIT). */
 function DiscordGlyph({ className = "h-4 w-4" }: { className?: string }) {
@@ -171,12 +156,25 @@ export function Header() {
         <a
           href="#header"
           aria-label={messages.nav.aria.logo}
-          className="inline-flex shrink-0 items-center gap-2 rounded-md focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2"
+          className="inline-flex shrink-0 items-center rounded-md focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2"
         >
-          <BrandMark />
-          <span className="text-lg font-semibold tracking-tight text-canvas">
-            {SITE_NAME}
-          </span>
+          {/* Official brand assets: horizontal logo (desktop) and symbol (mobile). */}
+          <Image
+            src="/v1Negativo.png"
+            alt=""
+            width={4619}
+            height={684}
+            priority
+            className="hidden h-7 w-auto sm:block"
+          />
+          <Image
+            src="/SimboloNegativo.png"
+            alt=""
+            width={1151}
+            height={1151}
+            priority
+            className="h-7 w-7 sm:hidden"
+          />
         </a>
 
         <nav
