@@ -95,6 +95,43 @@
     "noForms": "Cero formularios para empezar. Tu primer mensaje vale más que tu primer CV.",
     "cta": "Entrar al Discord"
   },
+  "hero": {
+    "title": "La comunidad donde demuestras lo que sabes",
+    "titleAccent": "Y las empresas vienen a verte",
+    "subtitle": "Deja de enviar candidaturas que nadie lee. Ni un filtro más que descarte tu código sin abrirlo. Aquí las oportunidades surgen de construir en público, colaborar en torneos reales y recibir feedback de programadores activos.",
+    "badges": {
+      "code": "Código evaluado en vivo",
+      "ats": "Sin sesgo de filtros ATS",
+      "prizes": "Retos y premios"
+    },
+    "cta": "Unirse al Discord",
+    "ctaSecondary": "Explorar torneos",
+    "terminal": {
+      "label": "Actividad reciente de la comunidad",
+      "title": "techtojob — comunidad",
+      "lines": [
+        { "kind": "channel", "text": "# revision-codigo" },
+        {
+          "kind": "message",
+          "text": "ana: acabo de subir mi solución del reto"
+        },
+        {
+          "kind": "message",
+          "text": "david: reviso tu PR y te dejo comentarios"
+        },
+        { "kind": "channel", "text": "# torneos" },
+        {
+          "kind": "message",
+          "text": "lucia: buscamos una persona más para el equipo"
+        },
+        {
+          "kind": "message",
+          "text": "marcos: comparto lo que aprendí en la última revisión"
+        },
+        { "kind": "system", "text": "build con éxito — main actualizado" }
+      ]
+    }
+  },
   "sections": {
     "header": "Encabezado",
     "hero": "Hero",

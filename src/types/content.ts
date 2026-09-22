@@ -47,6 +47,23 @@ export type Messages = {
       closeMenu: string;
     };
   };
+  hero: {
+    title: string;
+    titleAccent: string;
+    subtitle: string;
+    badges: {
+      code: string;
+      ats: string;
+      prizes: string;
+    };
+    cta: string;
+    ctaSecondary: string;
+    terminal: {
+      label: string;
+      title: string;
+      lines: { kind: string; text: string }[];
+    };
+  };
   sections: Record<SectionId, string>;
   howItWorks: {
     eyebrow: string;

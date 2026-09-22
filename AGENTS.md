@@ -42,7 +42,8 @@ This block is written and re-added by `next dev` — verify at `node_modules/nex
 - **Kit UI** (`src/components/ui/`): `Button` (variantes `primary`/`secondary`, tamaños `md/lg`, renderiza `<a>` con `href` o `<button>`), `icons.tsx` (glifos sociales SVG; no pegar SVG inline en otros componentes) y `src/lib/cn.ts`.
 - **Marca:** assets oficiales en `public/` — `Simbolo*` (isotipo), `v1*` (horizontal), `v2*` (apilado) × `Positivo/Negativo/Black/Degradado`. Sobre fondos oscuros usar la variante **Negativo** con `next/image` + `width/height` explícitos (v1: 4619×684 · v2: 2558×1418 · Símbolo: 1151×1151). Nombres ASCII siempre (nada de tildes en archivos).
 - **Anclas:** no añadir `scroll-mt` a las secciones; `html { scroll-padding-top: var(--ttj-header-offset) }` ya compensa el header sticky (y el scroll suave está bajo `prefers-reduced-motion`).
-- **Animaciones:** solo el toolkit de `globals.css` (`animate-caret`, `animate-glow`, `animate-float`, `hover:animate-glow`). La guarda global `prefers-reduced-motion: reduce` es inviolable.
+- **Animaciones:** solo el toolkit de `globals.css` (`animate-caret`, `animate-glow`, `animate-float`, `animate-grid`, `hover:animate-glow`). La guarda global `prefers-reduced-motion: reduce` es inviolable.
+- **Excepción documentada:** el Hero usa un degradado teal (`#84c0bf`) como cuadrícula de fondo decorativa con `animate-grid`; es lo único no interactivo que puede emplear el acento (ver `docs/feature-hero.md`).
 
 ## 5. Accesibilidad (WCAG AA — objetivo Lighthouse ≥ 90)
 - HTML semántico (`header/nav/main/section/article/footer`), listas reales, jerarquía de encabezados.
