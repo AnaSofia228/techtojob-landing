@@ -2,25 +2,31 @@
 
 /**
  * Site header.
- * Sticky navigation bar (`#header`) with the brand mark, the five primary
+ * Sticky navigation bar (`#header`) with the official brand logo, the five primary
  * links, an accessible "Más" disclosure dropdown (`aria-haspopup` +
  * `aria-expanded` + `aria-controls`), the Discord CTA and a responsive
  * mobile menu. Outside clicks and Escape close any open menu; opening the
  * dropdown moves focus to its first link.
  */
+import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
-import { BrandMark, DiscordGlyph } from "@/components/ui/icons";
+import { DiscordGlyph } from "@/components/ui/icons";
 import { moreNav, primaryNav } from "@/data/navigation";
 import { messages } from "@/lib/content";
-import { SITE_NAME, SOCIAL_LINKS } from "@/lib/site";
+import { SOCIAL_LINKS } from "@/lib/site";
 
 const MORE_BUTTON_ID = "boton-mas";
 const MORE_MENU_ID = "menu-mas";
 const MOBILE_MENU_ID = "menu-movil";
 
+// Desktop nav links: on hover the text turns accent teal and an underline
+// wipes in from the left (::after + scale-x), both with a soft transition.
 const navLinkClasses =
-  "inline-flex items-center rounded-md px-3 py-2 text-sm font-medium " +
-  "text-canvas transition-colors hover:bg-canvas/10 " +
+  "relative inline-flex items-center rounded-md px-3 py-2 text-sm font-medium " +
+  "text-canvas transition-colors duration-300 hover:text-accent " +
+  "after:absolute after:inset-x-3 after:bottom-1.5 after:h-px after:origin-left " +
+  "after:scale-x-0 after:bg-accent after:transition-transform after:duration-300 " +
+  "after:ease-out hover:after:scale-x-100 " +
   "focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2";
 
 function ChevronGlyph({ open }: { open: boolean }) {
@@ -142,12 +148,25 @@ export function Header() {
         <a
           href="#header"
           aria-label={messages.nav.aria.logo}
-          className="inline-flex shrink-0 items-center gap-2 rounded-md focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2"
+          className="inline-flex shrink-0 items-center rounded-md focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2"
         >
-          <BrandMark />
-          <span className="text-lg font-semibold tracking-tight text-canvas">
-            {SITE_NAME}
-          </span>
+          {/* Official brand assets: horizontal logo (desktop) and symbol (mobile). */}
+          <Image
+            src="/v1Negativo.png"
+            alt=""
+            width={4619}
+            height={684}
+            priority
+            className="hidden h-7 w-auto sm:block"
+          />
+          <Image
+            src="/SimboloNegativo.png"
+            alt=""
+            width={1151}
+            height={1151}
+            priority
+            className="h-7 w-7 sm:hidden"
+          />
         </a>
 
         <nav

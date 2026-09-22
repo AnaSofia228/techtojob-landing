@@ -21,7 +21,8 @@
 Componente cliente (`"use client"`) que cumple la sección **00** del PRD:
 
 - **Barra sticky** (`sticky top-0 z-50`) con fondo `--color-surface` (`#2f3436`).
-- **Marca**: logo tipo *prompt de terminal* («❯_») sobre baldosa en acento + nombre `TechToJob`, enlaza a `#header`.
+- **Marca**: logotipo oficial vía `next/image` — `v1Negativo.png` (logotipo horizontal, `sm+`) y `SimboloNegativo.png` (solo isotipo, móvil), ambos en variante *Negativo* (para fondos oscuros); enlaza a `#header`.
+  - Kit de marca completo en `public/`: **Símbolo** (isotipo), **v1** (horizontal) y **v2** (apilado) × *Positivo / Negativo / Black / Degradado*. Renombrados a ASCII (`Simbolo*`) para evitar URLs con tilde.
 - **Nav principal** (escritorio `lg+`): 5 enlaces — Cómo funciona, Talento, Empresas, Torneos, Comunidad — generados desde `src/data/navigation.ts` (`primaryNav`).
 - **Dropdown «Más» accesible** (Testimonios, Noticias, Newsletter desde `moreNav`)*:
   - `aria-haspopup="true"`, `aria-expanded`, `aria-controls`, `aria-labelledby`.
