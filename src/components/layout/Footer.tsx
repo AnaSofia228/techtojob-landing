@@ -4,9 +4,9 @@
  * brand wordmark, the official social links from the PRD (Discord, LinkedIn,
  * X, Instagram), the year-based copyright and the accessibility statement.
  */
+import Image from "next/image";
 import type { ReactElement } from "react";
 import {
-  BrandMark,
   DiscordGlyph,
   InstagramGlyph,
   LinkedInGlyph,
@@ -42,12 +42,16 @@ export function Footer() {
             <a
               href="#header"
               aria-label={messages.nav.aria.logo}
-              className="inline-flex items-center gap-2 rounded-md focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2"
+              className="inline-flex items-center rounded-md focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2"
             >
-              <BrandMark />
-              <span className="text-lg font-semibold text-canvas">
-                {SITE_NAME}
-              </span>
+              {/* Official stacked logo (v2) — Negativo variant, for dark surfaces. */}
+              <Image
+                src="/v2Negativo.png"
+                alt=""
+                width={2558}
+                height={1418}
+                className="h-16 w-auto"
+              />
             </a>
             <p className="mt-4 max-w-xs text-sm text-canvas/70">
               {messages.footer.tagline}

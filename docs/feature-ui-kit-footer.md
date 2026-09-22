@@ -25,7 +25,6 @@ Todos: monocromos (`fill="currentColor"`), decorativos (`aria-hidden="true"`), t
 
 | Icono | Origen / licencia | Uso |
 |---|---|---|
-| `BrandMark` | Diseño original — baldosa `var(--color-accent)` + prompt «❯_» | Logo del header y footer |
 | `DiscordGlyph` | simple-icons (MIT) | CTA Discord, redes |
 | `LinkedInGlyph` | Font Awesome Free (CC BY 4.0) | Redes |
 | `XGlyph` | simple-icons (MIT) | Redes |
@@ -60,7 +59,7 @@ Composición de clases condicionales (usada internamente por `Button`; disponibl
 Cumple la sección **11** del PRD (`#footer`):
 
 - **Layout responsive:** 1 columna en móvil → 2 en tablet (`sm:`) → 5 en desktop (`lg:`), con la marca a doble ancho (`lg:col-span-2`).
-- **Bloque de marca:** `BrandMark` + nombre + tagline + **4 redes sociales oficiales** (Discord, LinkedIn, X, Instagram) con `aria-label` por red y `target="_blank"`.
+- **Bloque de marca:** logotipo apilado oficial (`v2Negativo.png`, variante *Negativo*, `h-16`) + tagline + **4 redes sociales oficiales** (Discord, LinkedIn, X, Instagram) con `aria-label` por red y `target="_blank"`.
 - **4 columnas de navegación** generadas desde `messages.footer.columns`: **Talento**, **Empresas**, **Comunidad** y **Legal**. Cada una es un `<nav aria-label>`. Enlaces internos a anclas; Discord externo. La columna Legal se renderiza como **texto plano** (contenido pendiente de definir).
 - **Barra inferior:** copyright dinámico (`new Date().getFullYear()`) + declaración de accesibilidad.
 - Fondo `bg-surface` con borde superior `border-canvas/10`, foco visible en todos los enlaces.
@@ -73,7 +72,7 @@ Cumple la sección **11** del PRD (`#footer`):
 
 ### 2.4 Refactor del Header ✅
 
-- `Header.tsx` ahora importa `BrandMark` y `DiscordGlyph` desde el kit (SVG duplicado eliminado). Sin cambios visuales.
+- `Header.tsx` ahora importa `DiscordGlyph` desde el kit y usa el logotipo oficial (`v1Negativo.png` / `SimboloNegativo.png` vía `next/image`). Sin cambios de comportamiento.
 
 ---
 

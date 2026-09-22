@@ -1,32 +1,12 @@
 /**
  * Shared SVG icon set for the TechToJob landing.
  * All glyphs are monochrome (`currentColor`), decorative (`aria-hidden`) and
- * sized via `className`.
- * - Brand mark: original design (accent tile + terminal prompt "❯_").
+ * sized via `className`. Brand logos come from the official assets in
+ * `public/` (v1/v2/Simbolo PNGs) rendered via `next/image`.
  * - Discord, X, Instagram: simple-icons (MIT).
  * - LinkedIn: Font Awesome Free (CC BY 4.0).
  */
 export type IconProps = { className?: string };
-
-/** Terminal-prompt brand mark ("❯_") on the accent tile. */
-export function BrandMark({ className = "h-7 w-7" }: IconProps) {
-  return (
-    <svg
-      viewBox="0 0 28 28"
-      className={`${className} shrink-0`}
-      aria-hidden="true"
-    >
-      <rect width="28" height="28" rx="7" fill="var(--color-accent)" />
-      <path
-        d="M9 9l6-3M9 11l6 3M8 20h12"
-        fill="none"
-        stroke="var(--color-ink)"
-        strokeWidth={3}
-        strokeLinecap="round"
-      />
-    </svg>
-  );
-}
 
 /** Discord mark (simple-icons, MIT). */
 export function DiscordGlyph({ className = "h-4 w-4" }: IconProps) {
