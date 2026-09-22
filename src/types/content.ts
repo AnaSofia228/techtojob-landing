@@ -48,6 +48,14 @@ export type Messages = {
     };
   };
   sections: Record<SectionId, string>;
+  howItWorks: {
+    eyebrow: string;
+    title: string;
+    subtitle: string;
+    steps: Record<"01" | "02" | "03", { title: string; description: string }>;
+    noForms: string;
+    cta: string;
+  };
   footer: {
     tagline: string;
     labels: Record<string, string>;

@@ -74,6 +74,27 @@
     "copyright": "Todos los derechos reservados.",
     "accessibility": "Accesibilidad: diseñado cumpliendo WCAG AA — navegable por teclado, con foco visible y responsive en móvil, tablet y escritorio."
   },
+  "howItWorks": {
+    "eyebrow": "Cómo funciona",
+    "title": "Entra, construye y deja que te vean",
+    "subtitle": "No hay formularios eternos ni filtros previos. El proceso son tres pasos y empieza hoy mismo.",
+    "steps": {
+      "01": {
+        "title": "Entras al Discord",
+        "description": "Un clic y dentro. Te presentas, miras los canales y ves qué está construyendo la comunidad ahora mismo."
+      },
+      "02": {
+        "title": "Participas y construyes",
+        "description": "Te apuntas a un torneo, revisas código de otros o compartes el tuyo. Cada contribución queda a la vista de todos."
+      },
+      "03": {
+        "title": "Las oportunidades te encuentran",
+        "description": "Quien busca talento ya te está leyendo a ti, no a tu CV. Los primeros contactos llegan por tu trabajo visible."
+      }
+    },
+    "noForms": "Cero formularios para empezar. Tu primer mensaje vale más que tu primer CV.",
+    "cta": "Entrar al Discord"
+  },
   "sections": {
     "header": "Encabezado",
     "hero": "Hero",
