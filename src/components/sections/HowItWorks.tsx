@@ -60,7 +60,7 @@ export function HowItWorks() {
             return (
               <li
                 key={key}
-                className="flex flex-col rounded-xl border border-canvas/10 bg-ink-alt p-6"
+                className="ttj-card flex flex-col rounded-xl border border-canvas/10 bg-ink-alt p-6"
               >
                 <div className="flex items-start justify-between">
                   <span
@@ -69,7 +69,7 @@ export function HowItWorks() {
                   >
                     {key}
                   </span>
-                  <Icon className="h-5 w-5 text-canvas/60" />
+                                  <Icon className="ttj-card-icon h-5 w-5 text-canvas/60" />
                 </div>
                 <h3 className="mt-4 text-lg font-semibold text-canvas">
                   {step.title}
