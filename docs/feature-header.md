@@ -88,13 +88,13 @@ Definidos en `src/app/globals.css` (variables `--ttj-*` + `@theme inline`):
 
 ## 6. Commits de la rama
 
-- `e5d431a` — `feat(header): implement sticky nav, Más dropdown and Discord CTA`
-- `291441b` — `feat(header): offset anchor targets below sticky nav`
-- `0f65f05` — `chore: silence VS Code unknownAtRules for Tailwind v4`
-- `2cf64e8` — `feat(ui): add brand-themed animation toolkit`
+- `feat(header): implement sticky nav, Más dropdown and Discord CTA`
+- `feat(header): offset anchor targets below sticky nav`
+- `chore: silence VS Code unknownAtRules for Tailwind v4`
+- `feat(ui): add brand-themed animation toolkit`
 
-> Los commits de documentación (`docs: …`) no se listan para evitar referencias circulares.
-> ℹ️ **Nota de autoría:** los commits de las ramas `feature/*` son de Rubén D. Guerrero N. (`rudargeneira@gmail.com`); el commit inicial de `main` (`fc9c245`) conserva su autoría original de AnaSofia, que arrancó el proyecto. Si clonaste durante la corrección, sincroniza con `git pull --rebase`.
+> Los commits de documentación (`docs: …`) no se listan para evitar referencias circulares. Se listan por **mensaje**, no por SHA, porque los rebases de sincronización cambian los hashes.
+> ℹ️ **Nota de autoría:** los commits de las ramas `feature/*` son de Rubén D. Guerrero N. (`rudargeneira@gmail.com`); el commit inicial de `main` (`fc9c245`) conserva su autoría original de AnaSofia, que arrancó el proyecto.
 
 PR abierto: **https://github.com/AnaSofia228/techtojob-landing/pull/1** (`feature/header → main`)
 
