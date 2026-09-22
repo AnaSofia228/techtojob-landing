@@ -106,30 +106,24 @@
     },
     "cta": "Unirse al Discord",
     "ctaSecondary": "Explorar torneos",
-    "terminal": {
-      "label": "Actividad reciente de la comunidad",
-      "title": "techtojob — comunidad",
-      "lines": [
-        { "kind": "channel", "text": "# revision-codigo" },
-        {
-          "kind": "message",
-          "text": "ana: acabo de subir mi solución del reto"
-        },
-        {
-          "kind": "message",
-          "text": "david: reviso tu PR y te dejo comentarios"
-        },
-        { "kind": "channel", "text": "# torneos" },
-        {
-          "kind": "message",
-          "text": "lucia: buscamos una persona más para el equipo"
-        },
-        {
-          "kind": "message",
-          "text": "marcos: comparto lo que aprendí en la última revisión"
-        },
-        { "kind": "system", "text": "build con éxito — main actualizado" }
-      ]
+    "dashboard": {
+      "label": "Estado activo de la plataforma",
+      "session": "session: techtojob/discord-main",
+      "status": "Activo",
+      "prompt": "$ techtojob init --role junior-builder",
+      "response": "[OK] Filtros eliminados • Portafolio de Pull Requests sincronizado",
+      "activityLabel": "ACTIVIDAD EN TIEMPO REAL",
+      "tournamentStatus": "Torneo #02 abierto",
+      "tournamentPrefix": "Torneo #02:",
+      "tournamentName": "TechToJob",
+      "tournamentSubtitle": "Landing Page",
+      "tournamentTime": "hace 1 semana",
+      "tags": {
+        "frontend": "FrontEnd",
+        "stack": "Next.js + TailwindCSS"
+      },
+      "footerNote": "Sin formularios infinitos",
+      "footerVerified": "Comunidad verificada"
     }
   },
   "sections": {

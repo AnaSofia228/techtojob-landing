@@ -58,10 +58,21 @@ export type Messages = {
     };
     cta: string;
     ctaSecondary: string;
-    terminal: {
+    dashboard: {
       label: string;
-      title: string;
-      lines: { kind: string; text: string }[];
+      session: string;
+      status: string;
+      prompt: string;
+      response: string;
+      activityLabel: string;
+      tournamentStatus: string;
+      tournamentPrefix: string;
+      tournamentName: string;
+      tournamentSubtitle: string;
+      tournamentTime: string;
+      tags: { frontend: string; stack: string };
+      footerNote: string;
+      footerVerified: string;
     };
   };
   sections: Record<SectionId, string>;

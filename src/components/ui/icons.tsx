@@ -72,6 +72,24 @@ export function TrophyGlyph({ className = "h-4 w-4" }: IconProps) {
   );
 }
 
+/** Lightning bolt: verified community. */
+export function BoltGlyph({ className = "h-4 w-4" }: IconProps) {
+  return (
+    <svg
+      viewBox="0 0 24 24"
+      className={`${className} shrink-0`}
+      fill="none"
+      stroke="currentColor"
+      strokeWidth={2}
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      aria-hidden="true"
+    >
+      <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2" />
+    </svg>
+  );
+}
+
 /** Discord mark (simple-icons, MIT). */
 export function DiscordGlyph({ className = "h-4 w-4" }: IconProps) {
   return (
