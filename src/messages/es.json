@@ -122,6 +122,33 @@
       "cta": "Empezar en Discord"
     }
   },
+  "torneos": {
+    "eyebrow": "Torneos",
+    "titleLead": "Gana visibilidad resolviendo retos reales, ",
+    "titleAccent": "no mandando CVs",
+    "subtitle": "Cada torneo es una oportunidad para que líderes técnicos te observan en vivo. Participas cuando puedas; tu código es tu currículum.",
+    "activeTag": "Activo",
+    "current": {
+      "tag": "Torneo #02",
+      "title": "TechToJob Landing Live",
+      "description": "Construye la propia página de TechToJob. Tu solución se publica como portfolio y los líderes técnicos revisan tu código en directo desde Discord.",
+      "period": "21 sep – 12 oct · Envíos abiertos hasta el 5 oct",
+      "cta": "Unirse en Discord"
+    },
+    "rules": {
+      "headerTitle": "Cómo se juzga",
+      "items": [
+        "Aporta código real o pull requests sobre los repositorios oficiales.",
+        "Recibe feedback de pares y mentoría de líderes técnicos en vivo.",
+        "Juegas cuando puedas aportar: tu participación nunca excluye, solo suma."
+      ]
+    },
+    "banner": {
+      "strong": "Sin pruebas trampa ni tests secretos.",
+      "rest": "Demuestra lo que sabes con código abierto y revisable por todos.",
+      "cta": "Ver torneos en Discord"
+    }
+  },
   "sections": {
     "header": "Encabezado",
     "hero": "Hero",

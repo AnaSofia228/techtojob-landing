@@ -63,6 +63,29 @@ export type Messages = {
       traditional: { title: string; items: string[] };
       techtojob: { title: string; items: string[] };
     };
+      banner: {
+      strong: string;
+      rest: string;
+      cta: string;
+    };
+  };
+  torneos: {
+    eyebrow: string;
+    titleLead: string;
+    titleAccent: string;
+    subtitle: string;
+    activeTag: string;
+    current: {
+      tag: string;
+      title: string;
+      description: string;
+      period: string;
+      cta: string;
+    };
+    rules: {
+      headerTitle: string;
+      items: string[];
+    };
     banner: {
       strong: string;
       rest: string;
