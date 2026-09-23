@@ -381,6 +381,12 @@
       }
     ]
   },
+  "cierre": {
+    "titleLead": "El siguiente paso no es enviar otro CV, ",
+    "titleAccent": "es entrar a picar código",
+    "subtitle": "La comunidad está abierta, los retos están en marcha y los proyectos se construyen en público. Solo falta que te sumes a la conversación.",
+    "cta": "Unirse al Discord de TechToJob"
+  },
   "sections": {
     "header": "Encabezado",
     "hero": "Hero",
