@@ -43,16 +43,10 @@ export type Messages = {
   };
   nav: {
     primary: Record<string, string>;
-    more: {
-      label: string;
-      items: Record<string, string>;
-    };
     cta: string;
     aria: {
       logo: string;
       primary: string;
-      more: string;
-      menu: string;
       openMenu: string;
       closeMenu: string;
       language: string;

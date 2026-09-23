@@ -10,22 +10,15 @@
       "talento": "Talent",
       "empresas": "Companies",
       "torneos": "Tournaments",
-      "comunidad": "Community"
-    },
-    "more": {
-      "label": "More",
-      "items": {
-        "testimonios": "Testimonials",
-        "noticias": "News",
-        "newsletter": "Newsletter"
-      }
+      "comunidad": "Community",
+      "testimonios": "Testimonials",
+      "noticias": "News",
+      "newsletter": "Newsletter"
     },
     "cta": "Join Discord",
     "aria": {
       "logo": "TechToJob, back to top",
       "primary": "Main navigation",
-      "more": "More sections",
-      "menu": "Navigation menu",
       "openMenu": "Open navigation menu",
       "closeMenu": "Close navigation menu",
       "language": "Language"
@@ -54,7 +47,7 @@
       },
       {
         "heading": "Companies",
-        "links": ["empresas", "talento", "comunidad"]
+        "links": ["empresas", "comunidad"]
       },
       {
         "heading": "Community",

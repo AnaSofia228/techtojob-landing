@@ -16,7 +16,3 @@ function toNavItems(entries: [string, string][]): NavItem[] {
 export function getPrimaryNav(messages: Messages): NavItem[] {
   return toNavItems(Object.entries(messages.nav.primary));
 }
-
-export function getMoreNav(messages: Messages): NavItem[] {
-  return toNavItems(Object.entries(messages.nav.more.items));
-}

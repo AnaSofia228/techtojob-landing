@@ -23,13 +23,9 @@ Componente cliente (`"use client"`) que cumple la sección **00** del PRD:
 - **Barra sticky** (`sticky top-0 z-50`) con fondo `--color-surface` (`#2f3436`).
 - **Marca**: logotipo oficial vía `next/image` — `v1Negativo.png` (logotipo horizontal, `sm+`) y `SimboloNegativo.png` (solo isotipo, móvil), ambos en variante *Negativo* (para fondos oscuros); enlaza a `#header`.
   - Kit de marca completo en `public/`: **Símbolo** (isotipo), **v1** (horizontal) y **v2** (apilado) × *Positivo / Negativo / Black / Degradado*. Renombrados a ASCII (`Simbolo*`) para evitar URLs con tilde.
-- **Nav principal** (escritorio `lg+`): 5 enlaces — Cómo funciona, Talento, Empresas, Torneos, Comunidad — generados desde `src/data/navigation.ts` (`primaryNav`).
-- **Dropdown «Más» accesible** (Testimonios, Noticias, Newsletter desde `moreNav`)*:
-  - `aria-haspopup="true"`, `aria-expanded`, `aria-controls`, `aria-labelledby`.
-  - Cierra con **Escape** (devuelve el foco al botón), **clic fuera** y al elegir una opción.
-  - Al abrir, el **foco se mueve al primer enlace**.
+- **Nav principal** (escritorio `xl+`): los 8 enlaces — Cómo funciona, Talento, Empresas, Torneos, Comunidad, Testimonios, Noticias y Newsletter — generados desde `src/data/navigation.ts` (`getPrimaryNav`), todos en una sola fila. (El antiguo dropdown «Más» se eliminó y sus 3 enlaces se integraron en la nav; con 8 enlaces el nav de escritorio pasa a `xl` y por debajo se usa el menú móvil.)
 - **CTA «Unirse al Discord»** → `https://discord.gg/h9FFgKdkRd` con **SVG oficial de Discord** (simple-icons, MIT). Botón `bg-accent` + texto `#111416` → **contraste ≈ 9.5:1** (WCAG AA).
-- **Menú móvil** (`< lg`): botón hamburguesa ↔ X con `aria-expanded`/`aria-controls`, panel con enlaces, grupo «Más» y CTA a ancho completo. Cierra al navegar o con Escape.
+- **Menú móvil** (`< xl`): botón hamburguesa ↔ X con `aria-expanded`/`aria-controls`, panel con los 8 enlaces y CTA a ancho completo. Cierra al navegar, con Escape o clic fuera.
 - **Foco visible** en todos los interactivos (`ring-accent`; `ring-canvas` en los botones de acento).
 
 ### 2.2 Catálogo de textos i18n ✅

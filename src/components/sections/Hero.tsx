@@ -323,8 +323,8 @@ export function Hero() {
         )}
       />
 
-      <div className="relative z-10 mx-auto grid w-full max-w-7xl gap-12 px-4 py-20 sm:px-6 sm:py-24 lg:grid-cols-[minmax(0,1fr)_minmax(0,28rem)] lg:items-center lg:gap-16 lg:px-8">
-        <div className="w-full">
+      <div className="relative z-10 mx-auto grid w-full max-w-7xl grid-cols-1 gap-12 px-4 py-20 sm:px-6 sm:py-24 lg:grid-cols-[minmax(0,1fr)_minmax(0,28rem)] lg:items-center lg:gap-16 lg:px-8">
+        <div className="w-full min-w-0">
           <h1 className="text-4xl font-bold leading-tight tracking-tight text-canvas sm:text-5xl lg:text-6xl">
             {title} <span className="text-accent">{titleAccent}</span>
           </h1>
@@ -359,7 +359,7 @@ export function Hero() {
           </div>
         </div>
 
-        <figure aria-label={dashboard.label} className="mx-auto w-full max-w-md lg:mx-0">
+        <figure aria-label={dashboard.label} className="mx-auto w-full min-w-0 max-w-md lg:mx-0">
           <div className="cursor-default overflow-hidden rounded-2xl border border-canvas/10 bg-ink-alt shadow-2xl transition-all duration-300 ease-out hover:border-accent hover:shadow-[0_0_30px_rgba(132,192,191,0.15),0_25px_50px_-12px_rgba(0,0,0,0.45)] motion-safe:hover:-translate-y-0.5">
             {/* Header: macOS-style dots, session path and live status pill. */}
             <div className="flex items-center justify-between gap-3 border-b border-canvas/10 px-4 py-3">
