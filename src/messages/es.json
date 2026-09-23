@@ -381,6 +381,37 @@
       }
     ]
   },
+  "hero": {
+    "title": "La comunidad donde demuestras lo que sabes",
+    "titleAccent": "Y las empresas vienen a verte",
+    "subtitle": "Deja de enviar candidaturas que nadie lee. Ni un filtro más que descarte tu código sin abrirlo. Aquí las oportunidades surgen de construir en público, colaborar en torneos reales y recibir feedback de programadores activos.",
+    "badges": {
+      "code": "Código evaluado en vivo",
+      "ats": "Sin sesgo de filtros ATS",
+      "prizes": "Retos y premios"
+    },
+    "cta": "Unirse al Discord",
+    "ctaSecondary": "Explorar torneos",
+    "dashboard": {
+      "label": "Estado activo de la plataforma",
+      "session": "session: techtojob/discord-main",
+      "status": "Activo",
+      "prompt": "$ techtojob init --role junior-builder",
+      "response": "[OK] Filtros eliminados • Portafolio de Pull Requests sincronizado",
+      "activityLabel": "ACTIVIDAD EN TIEMPO REAL",
+      "tournamentStatus": "Torneo #02 abierto",
+      "tournamentPrefix": "Torneo #02:",
+      "tournamentName": "TechToJob",
+      "tournamentSubtitle": "Landing Page",
+      "tournamentTime": "hace 1 semana",
+      "tags": {
+        "frontend": "FrontEnd",
+        "stack": "Next.js + TailwindCSS"
+      },
+      "footerNote": "Sin formularios infinitos",
+      "footerVerified": "Comunidad verificada"
+    }
+  },
   "sections": {
     "header": "Encabezado",
     "hero": "Hero",
