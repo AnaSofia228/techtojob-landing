@@ -11,6 +11,8 @@
   --ttj-canvas: #ffffff;
   --ttj-ink: #111416;
   --ttj-ink-alt: #191c1e;
+  /* Headroom so anchor jumps clear the sticky header (~60px tall). */
+  --ttj-header-offset: 5rem;
 }
 
 @theme inline {
@@ -22,8 +24,73 @@
   --font-sans: var(--font-sora);
 }
 
+/*
+ * Animation toolkit (Tailwind `animate-*` utilities).
+ * Subtle, brand-themed (terminal / teal) and non-intrusive. All animations
+ * are disabled under prefers-reduced-motion (see guard at the bottom).
+ */
+@theme {
+  --animate-caret: ttj-caret 1.2s steps(1) infinite;
+  --animate-glow: ttj-glow 4s ease-in-out infinite;
+  --animate-float: ttj-float 6s ease-in-out infinite;
+
+  @keyframes ttj-caret {
+    0%,
+    45% {
+      opacity: 1;
+    }
+    50%,
+    100% {
+      opacity: 0;
+    }
+  }
+
+  @keyframes ttj-glow {
+    0%,
+    100% {
+      box-shadow: 0 0 0 0 rgb(132 192 191 / 0);
+    }
+    50% {
+      box-shadow: 0 0 22px 2px rgb(132 192 191 / 0.35);
+    }
+  }
+
+  @keyframes ttj-float {
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-8px);
+    }
+  }
+}
+
+/* Anchor targets land below the sticky header; smooth scroll only when the
+ * user has not requested reduced motion (WCAG 2.3.3). */
+html {
+  scroll-padding-top: var(--ttj-header-offset);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
 body {
   background-color: var(--color-ink);
   color: var(--color-canvas);
   font-family: var(--font-sans), system-ui, sans-serif;
+}
+
+/* Respect users who request reduced motion (WCAG 2.3.3 / POUR). */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
 }

@@ -1,0 +1,8 @@
+{
+  // Tailwind CSS v4 uses custom at-rules (@theme, @variant, @apply, ...).
+  // The VS Code built-in CSS validator flags them as "Unknown at rule",
+  // which is a false positive: Tailwind processes them at build time.
+  // https://tailwindcss.com/docs/editor-setup#unknown-at-rules
+  "css.lint.unknownAtRules": "ignore",
+  "scss.lint.unknownAtRules": "ignore"
+}
