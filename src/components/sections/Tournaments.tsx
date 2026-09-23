@@ -57,7 +57,7 @@ export function Tournaments() {
         </div>
 
         {/* Nota destacada: la prueba más real */}
-        <div className="mt-10 flex items-start gap-4 rounded-xl border border-canvas/10 bg-ink-alt px-6 py-5">
+        <div className="mt-10 flex items-start gap-4 rounded-xl border border-surface/80 bg-accent/40 px-6 py-5">
           <span
             aria-hidden="true"
             className="mt-0.5 rounded-md border border-accent/40 bg-accent/10 p-2 text-accent"
