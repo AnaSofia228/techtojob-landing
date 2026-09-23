@@ -33,6 +33,7 @@
   --animate-caret: ttj-caret 1.2s steps(1) infinite;
   --animate-glow: ttj-glow 4s ease-in-out infinite;
   --animate-float: ttj-float 6s ease-in-out infinite;
+  --animate-grid: ttj-grid 20s linear infinite;
 
   @keyframes ttj-caret {
     0%,
@@ -62,6 +63,17 @@
     }
     50% {
       transform: translateY(-8px);
+    }
+  }
+
+  /* Hero background grid drifting left -> right, slow enough to read as
+   * ambience rather than motion. The reduced-motion guard below freezes it. */
+  @keyframes ttj-grid {
+    from {
+      background-position: 0 0;
+    }
+    to {
+      background-position: 64px 0;
     }
   }
 }
