@@ -339,6 +339,15 @@
     ],
     "cta": "Unirse a la comunidad en Discord"
   },
+  "newsletter": {
+    "eyebrow": "SUSCRIPCIÓN",
+    "title": "Lo relevante del sector y la comunidad, directo a tu bandeja",
+    "subtitle": "Avisos de nuevos torneos, vacantes compartidas directamente por miembros y análisis técnicos sin relleno. Sin correos comerciales vacíos ni cursos trampa.",
+    "emailLabel": "Tu correo electrónico",
+    "emailPlaceholder": "tu@email.com",
+    "cta": "Quiero las novedades",
+    "trust": "Cero spam. Te das de baja con un clic cuando quieras."
+  },
   "sections": {
     "header": "Encabezado",
     "hero": "Hero",

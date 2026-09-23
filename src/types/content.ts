@@ -171,6 +171,15 @@ export type Messages = {
     channels: { name: string; description: string }[];
     cta: string;
   };
+  newsletter: {
+    eyebrow: string;
+    title: string;
+    subtitle: string;
+    emailLabel: string;
+    emailPlaceholder: string;
+    cta: string;
+    trust: string;
+  };
   footer: {
     tagline: string;
     labels: Record<string, string>;
