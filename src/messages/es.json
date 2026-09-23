@@ -339,6 +339,70 @@
     ],
     "cta": "Unirse a la comunidad en Discord"
   },
+  "noticias": {
+    "eyebrow": "Noticias",
+    "titleLead": "Lo que se mueve en el código ",
+    "titleAccent": "y en la comunidad",
+    "subtitle": "Actualizaciones sobre retos activos, cambios en el sector y recursos creados por y para la comunidad. Sin humo ni relleno.",
+    "items": [
+      {
+        "tag": "Torneos",
+        "date": "18 oct 2024",
+        "title": "Torneo #02 en marcha: diseñando la landing oficial abierta a producción",
+        "excerpt": "Arranca la fase de desarrollo para la nueva web de TechToJob. Rúbrica pública, código en abierto y despliegue real para la propuesta ganadora.",
+        "cta": "Leer las bases del Torneo #02",
+        "href": "#torneos",
+        "highlight": true
+      },
+      {
+        "tag": "Comunidad",
+        "date": "14 oct 2024",
+        "title": "Nuevo canal #code-reviews en Discord: feedback entre pares antes de publicar",
+        "excerpt": "Habilitamos un espacio dedicado para revisar pull requests de proyectos personales y pulir la calidad del código en abierto.",
+        "cta": "Explorar las dinámicas de code review",
+        "href": "#comunidad"
+      },
+      {
+        "tag": "Sector",
+        "date": "09 oct 2024",
+        "title": "El auge de la contratación basada en código visible frente al CV ciego",
+        "excerpt": "Cada vez más equipos técnicos prescinden de cribas por palabras clave para centrarse en cómo razonas y colaboras en repositorios reales.",
+        "cta": "Leer el análisis sobre contratación técnica",
+        "href": "#empresas"
+      }
+    ]
+  },
+  "hero": {
+    "title": "La comunidad donde demuestras lo que sabes",
+    "titleAccent": "Y las empresas vienen a verte",
+    "subtitle": "Deja de enviar candidaturas que nadie lee. Ni un filtro más que descarte tu código sin abrirlo. Aquí las oportunidades surgen de construir en público, colaborar en torneos reales y recibir feedback de programadores activos.",
+    "badges": {
+      "code": "Código evaluado en vivo",
+      "ats": "Sin sesgo de filtros ATS",
+      "prizes": "Retos y premios"
+    },
+    "cta": "Unirse al Discord",
+    "ctaSecondary": "Explorar torneos",
+    "dashboard": {
+      "label": "Estado activo de la plataforma",
+      "session": "session: techtojob/discord-main",
+      "status": "Activo",
+      "prompt": "$ techtojob init --role junior-builder",
+      "response": "[OK] Filtros eliminados • Portafolio de Pull Requests sincronizado",
+      "activityLabel": "ACTIVIDAD EN TIEMPO REAL",
+      "tournamentStatus": "Torneo #02 abierto",
+      "tournamentPrefix": "Torneo #02:",
+      "tournamentName": "TechToJob",
+      "tournamentSubtitle": "Landing Page",
+      "tournamentTime": "hace 1 semana",
+      "tags": {
+        "frontend": "FrontEnd",
+        "stack": "Next.js + TailwindCSS"
+      },
+      "footerNote": "Sin formularios infinitos",
+      "footerVerified": "Comunidad verificada"
+    }
+  },
   "sections": {
     "header": "Encabezado",
     "hero": "Hero",

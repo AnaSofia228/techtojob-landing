@@ -171,6 +171,22 @@ export type Messages = {
     channels: { name: string; description: string }[];
     cta: string;
   };
+  noticias: {
+    eyebrow: string;
+    titleLead: string;
+    titleAccent: string;
+    subtitle: string;
+    items: {
+      tag: string;
+      date: string;
+      title: string;
+      excerpt: string;
+      cta: string;
+      href: string;
+      /** Chip destacado en accent (categoría ligada al torneo activo). */
+      highlight?: boolean;
+    }[];
+  };
   footer: {
     tagline: string;
     labels: Record<string, string>;
