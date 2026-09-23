@@ -244,6 +244,42 @@
       }
     }
   },
+  "testimonios": {
+    "eyebrow": "Testimonios",
+    "titleLead": "Lo que opinan quienes ya pican ",
+    "titleAccent": "código dentro",
+    "subtitle": "Experiencias reales dentro del Discord. Sin filtros de marketing ni métricas infladas. Opiniones cualitativas de builders que construyen en abierto.",
+    "items": [
+      {
+        "initials": "AM",
+        "name": "Álvaro M.",
+        "role": "Junior Frontend · React",
+        "quote": "“Por fin un sitio donde revisan cómo estructuro mis pull requests en vez de descartarme automáticamente por no tener 3 años de experiencia previa.”",
+        "tag": "Discord Builder"
+      },
+      {
+        "initials": "SG",
+        "name": "Sara G.",
+        "role": "Backend Builder · Node",
+        "quote": "“El torneo me dio un repositorio desplegado y con commits limpios que pude explicar punto por punto en mi última entrevista técnica.”",
+        "tag": "Torneo #01"
+      },
+      {
+        "initials": "MR",
+        "name": "Mateo R.",
+        "role": "Full Stack Dev · Next",
+        "quote": "“En el canal de Discord me ayudaron a resolver un problema de arquitectura en 20 minutos con explicaciones sinceras de programadores en activo.”",
+        "tag": "Canal #devops"
+      },
+      {
+        "initials": "EV",
+        "name": "Elena V.",
+        "role": "Tech Lead & Mentora",
+        "quote": "“Nadie te pide que maquilles el CV. Subes tus repos, participas en los retos y la gente ve cómo trabajas en equipo de verdad.”",
+        "tag": "Mentora activa"
+      }
+    ]
+  },
   "sections": {
     "header": "Encabezado",
     "hero": "Hero",
