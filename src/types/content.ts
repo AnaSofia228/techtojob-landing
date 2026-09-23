@@ -196,6 +196,12 @@ export type Messages = {
       highlight?: boolean;
     }[];
   };
+  cierre: {
+    titleLead: string;
+    titleAccent: string;
+    subtitle: string;
+    cta: string;
+  };
   footer: {
     tagline: string;
     labels: Record<string, string>;
