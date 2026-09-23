@@ -348,6 +348,39 @@
     "cta": "Quiero las novedades",
     "trust": "Cero spam. Te das de baja con un clic cuando quieras."
   },
+  "noticias": {
+    "eyebrow": "Noticias",
+    "titleLead": "Lo que se mueve en el código ",
+    "titleAccent": "y en la comunidad",
+    "subtitle": "Actualizaciones sobre retos activos, cambios en el sector y recursos creados por y para la comunidad. Sin humo ni relleno.",
+    "items": [
+      {
+        "tag": "Torneos",
+        "date": "18 oct 2024",
+        "title": "Torneo #02 en marcha: diseñando la landing oficial abierta a producción",
+        "excerpt": "Arranca la fase de desarrollo para la nueva web de TechToJob. Rúbrica pública, código en abierto y despliegue real para la propuesta ganadora.",
+        "cta": "Leer las bases del Torneo #02",
+        "href": "#torneos",
+        "highlight": true
+      },
+      {
+        "tag": "Comunidad",
+        "date": "14 oct 2024",
+        "title": "Nuevo canal #code-reviews en Discord: feedback entre pares antes de publicar",
+        "excerpt": "Habilitamos un espacio dedicado para revisar pull requests de proyectos personales y pulir la calidad del código en abierto.",
+        "cta": "Explorar las dinámicas de code review",
+        "href": "#comunidad"
+      },
+      {
+        "tag": "Sector",
+        "date": "09 oct 2024",
+        "title": "El auge de la contratación basada en código visible frente al CV ciego",
+        "excerpt": "Cada vez más equipos técnicos prescinden de cribas por palabras clave para centrarse en cómo razonas y colaboras en repositorios reales.",
+        "cta": "Leer el análisis sobre contratación técnica",
+        "href": "#empresas"
+      }
+    ]
+  },
   "sections": {
     "header": "Encabezado",
     "hero": "Hero",
