@@ -47,6 +47,34 @@ export type Messages = {
       closeMenu: string;
     };
   };
+  hero: {
+    title: string;
+    titleAccent: string;
+    subtitle: string;
+    badges: {
+      code: string;
+      ats: string;
+      prizes: string;
+    };
+    cta: string;
+    ctaSecondary: string;
+    dashboard: {
+      label: string;
+      session: string;
+      status: string;
+      prompt: string;
+      response: string;
+      activityLabel: string;
+      tournamentStatus: string;
+      tournamentPrefix: string;
+      tournamentName: string;
+      tournamentSubtitle: string;
+      tournamentTime: string;
+      tags: { frontend: string; stack: string };
+      footerNote: string;
+      footerVerified: string;
+    };
+  };
   sections: Record<SectionId, string>;
   howItWorks: {
     eyebrow: string;
