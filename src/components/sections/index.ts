@@ -4,8 +4,7 @@
  */
 export { Hero } from "@/components/sections/Hero";
 export { HowItWorks } from "@/components/sections/HowItWorks";
-export { Talent } from "@/components/sections/Talent";
-export { Companies } from "@/components/sections/Companies";
+export { TalentCompanies } from "@/components/sections/TalentCompanies";
 export { Tournaments } from "@/components/sections/Tournaments";
 export { Community } from "@/components/sections/Community";
 export { Testimonials } from "@/components/sections/Testimonials";

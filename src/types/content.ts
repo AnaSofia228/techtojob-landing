@@ -26,6 +26,15 @@ export type NavItem = {
   href: `#${SectionId}`;
 };
 
+export type PanelContent = {
+  eyebrow: string;
+  title: string;
+  description: string;
+  badges: string[];
+  cta: string;
+  ctaNote: string;
+};
+
 export type Messages = {
   _comment?: string;
   site: {
@@ -76,6 +85,16 @@ export type Messages = {
     };
   };
   sections: Record<SectionId, string>;
+  talentCompanies: {
+    eyebrow: string;
+    titleLead: string;
+    titleAccent: string;
+    subtitle: string;
+    tabsLabel: string;
+    tabs: { talent: string; companies: string };
+    talent: PanelContent;
+    companies: PanelContent;
+  };
   howItWorks: {
     eyebrow: string;
     titleLead: string;
