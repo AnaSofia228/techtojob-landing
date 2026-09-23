@@ -5,6 +5,7 @@
  * `public/` (v1/v2/Simbolo PNGs) rendered via `next/image`.
  * - Discord, X, Instagram: simple-icons (MIT).
  * - LinkedIn: Font Awesome Free (CC BY 4.0).
+ * - UI glyphs (chat, code, check, clock, rocket, scale...): Lucide (ISC).
  */
 export type IconProps = { className?: string };
 
@@ -318,6 +319,108 @@ export function GemGlyph({ className = "h-4 w-4" }: IconProps) {
       <path d="M6 3h12l4 6-10 13L2 9Z" />
       <path d="M11 3 8 9l4 13 4-13-3-6" />
       <path d="M2 9h20" />
+    </svg>
+  );
+}
+
+/** Clock icon (Lucide clock-3). */
+export function ClockGlyph({ className = "h-4 w-4" }: IconProps) {
+  return (
+    <svg
+      viewBox="0 0 24 24"
+      className={`${className} shrink-0`}
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      aria-hidden="true"
+    >
+      <circle cx="12" cy="12" r="10" />
+      <line x1="12" x2="12" y1="7" y2="12" />
+      <line x1="12" x2="12.01" y1="16" y2="16" />
+    </svg>
+  );
+}
+
+/** Rocket icon (Lucide rocket). */
+export function RocketGlyph({ className = "h-4 w-4" }: IconProps) {
+  return (
+    <svg
+      viewBox="0 0 24 24"
+      className={`${className} shrink-0`}
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      aria-hidden="true"
+    >
+      <path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5" />
+      <path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09" />
+      <path d="M9 12a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.4 22.4 0 0 1-4 2z" />
+      <path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 .05 5 .05" />
+    </svg>
+  );
+}
+
+/** Balance scale icon (Lucide scale). */
+export function ScaleGlyph({ className = "h-4 w-4" }: IconProps) {
+  return (
+    <svg
+      viewBox="0 0 24 24"
+      className={`${className} shrink-0`}
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      aria-hidden="true"
+    >
+      <path d="M12 3v18" />
+      <path d="m19 8 3 8a5 5 0 0 1-6 0zV7" />
+      <path d="M3 7h1a17 17 0 0 0 8-2 17 17 0 0 0 8 2h1" />
+      <path d="m5 8 3 8a5 5 0 0 1-6 0zV7" />
+      <path d="M7 21h10" />
+    </svg>
+  );
+}
+
+/** Gear icon (Lucide settings). */
+export function SettingsGlyph({ className = "h-4 w-4" }: IconProps) {
+  return (
+    <svg
+      viewBox="0 0 24 24"
+      className={`${className} shrink-0`}
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      aria-hidden="true"
+    >
+      <path d="M9.671 4.136a2.34 2.34 0 0 1 4.659 0 2.34 2.34 0 0 0 3.319 1.915 2.34 2.34 0 0 1 2.33 4.033 2.34 2.34 0 0 0 0 3.831 2.34 2.34 0 0 1-2.33 4.033 2.34 2.34 0 0 0-3.319 1.915 2.34 2.34 0 0 1-4.659 0 2.34 2.34 0 0 0-3.32-1.915 2.34 2.34 0 0 1-2.33-4.033 2.34 2.34 0 0 0 0-3.831A2.34 2.34 0 0 1 6.35 6.051a2.34 2.34 0 0 0 3.319-1.915" />
+      <circle cx="12" cy="12" r="3" />
+    </svg>
+  );
+}
+
+/** Display icon (Lucide monitor). */
+export function MonitorGlyph({ className = "h-4 w-4" }: IconProps) {
+  return (
+    <svg
+      viewBox="0 0 24 24"
+      className={`${className} shrink-0`}
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      aria-hidden="true"
+    >
+      <rect width="20" height="14" x="2" y="3" rx="2" />
+      <line x1="8" x2="16" y1="21" y2="21" />
+      <line x1="12" x2="12" y1="17" y2="21" />
     </svg>
   );
 }

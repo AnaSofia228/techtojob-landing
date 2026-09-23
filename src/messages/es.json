@@ -188,6 +188,62 @@
       "ctaNote": "Evaluación técnica sin intermediarios"
     }
   },
+  "torneos": {
+    "eyebrow": "Torneos",
+    "titleLead": "Retos reales con código de verdad, ",
+    "titleAccent": "no ejercicios de tutorial",
+    "subtitle": "Aprende colaborando en retos con especificaciones reales. Llévate proyectos verificables para defender en entrevistas y date a conocer ante la comunidad y empresas técnicas.",
+    "highlight": {
+      "strong": "La prueba más real: esta misma web que estás viendo nació de un torneo de TechToJob",
+      "rest": "Aquí no construyes maquetas para olvidar en un cajón. Desarrollas proyectos reales que se despliegan en producción y resuelven necesidades reales."
+    },
+    "current": {
+      "badge": "Torneo activo",
+      "status": "En curso",
+      "edition": "Edición comunitaria",
+      "meta": "Repo público & revisión abierta",
+      "title": "Torneo #02 · Landing oficial de TechToJob",
+      "description": "Diseñar y programar la landing oficial de la comunidad, cumpliendo estándares estrictos de rendimiento, accesibilidad, código semántico y jerarquía visual.",
+      "period": "21 sep – 12 oct · Envíos abiertos hasta el 5 oct",
+      "criteria": {
+        "criteria": {
+          "title": "Criterios públicos",
+          "description": "Jurado transparente con rúbrica conocida de antemano: código, diseño, SEO y accesibilidad."
+        },
+        "production": {
+          "title": "Producción real",
+          "description": "La propuesta ganadora se despliega como web oficial de la comunidad."
+        },
+        "review": {
+          "title": "Revisión abierta",
+          "description": "Feedback honesto y constructivo entre participantes y miembros técnicos."
+        }
+      },
+      "join": {
+        "label": "Súmate al torneo en marcha",
+        "description": "Todo el seguimiento, las dudas y la entrega se gestionan de forma abierta en el canal de torneos.",
+        "cta": "Participar en Discord"
+      }
+    },
+    "steps": {
+      "01": {
+        "title": "Se abre el reto",
+        "description": "Especificaciones claras, requisitos técnicos y plazo definido, publicados con total antelación."
+      },
+      "02": {
+        "title": "Picas código y colaboras",
+        "description": "Desarrollas en abierto, consultas dudas y compartes tus avances en los canales de Discord."
+      },
+      "03": {
+        "title": "Jurado con rúbrica pública",
+        "description": "Evaluación transparente sin ambigüedades, basada en criterios técnicos y funcionales objetivos."
+      },
+      "04": {
+        "title": "Se despliega de verdad",
+        "description": "El trabajo ganador cobra vida en el mundo real y pasa a ser tu mejor carta de presentación."
+      }
+    }
+  },
   "sections": {
     "header": "Encabezado",
     "hero": "Hero",

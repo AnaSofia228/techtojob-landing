@@ -116,6 +116,38 @@ export type Messages = {
       cta: string;
     };
   };
+  torneos: {
+    eyebrow: string;
+    titleLead: string;
+    titleAccent: string;
+    subtitle: string;
+    highlight: {
+      strong: string;
+      rest: string;
+    };
+    current: {
+      badge: string;
+      status: string;
+      edition: string;
+      meta: string;
+      title: string;
+      description: string;
+      period: string;
+      criteria: Record<
+        "criteria" | "production" | "review",
+        { title: string; description: string }
+      >;
+      join: {
+        label: string;
+        description: string;
+        cta: string;
+      };
+    };
+    steps: Record<
+      "01" | "02" | "03" | "04",
+      { title: string; description: string }
+    >;
+  };
   footer: {
     tagline: string;
     labels: Record<string, string>;
