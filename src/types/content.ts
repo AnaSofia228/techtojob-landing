@@ -63,7 +63,7 @@ export type Messages = {
       traditional: { title: string; items: string[] };
       techtojob: { title: string; items: string[] };
     };
-      banner: {
+    banner: {
       strong: string;
       rest: string;
       cta: string;
@@ -74,23 +74,32 @@ export type Messages = {
     titleLead: string;
     titleAccent: string;
     subtitle: string;
-    activeTag: string;
+    highlight: {
+      strong: string;
+      rest: string;
+    };
     current: {
-      tag: string;
+      badge: string;
+      status: string;
+      edition: string;
+      meta: string;
       title: string;
       description: string;
       period: string;
-      cta: string;
+      criteria: Record<
+        "criteria" | "production" | "review",
+        { title: string; description: string }
+      >;
+      join: {
+        label: string;
+        description: string;
+        cta: string;
+      };
     };
-    rules: {
-      headerTitle: string;
-      items: string[];
-    };
-    banner: {
-      strong: string;
-      rest: string;
-      cta: string;
-    };
+    steps: Record<
+      "01" | "02" | "03" | "04",
+      { title: string; description: string }
+    >;
   };
   footer: {
     tagline: string;
