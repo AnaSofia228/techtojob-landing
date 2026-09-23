@@ -280,6 +280,65 @@
       }
     ]
   },
+  "comunidad": {
+    "eyebrow": "COMUNIDAD",
+    "titleLead": "Las mejores oportunidades no se publican, ",
+    "titleAccent": "te enteras",
+    "subtitle": "Gente de sector compartiendo retos, feedback y vacantes en tiempo real. Cero postureo corporativo",
+    "features": [
+      {
+        "title": "Canales temáticos especializados",
+        "description": "Espacios organizados por tecnología y disciplina para resolver dudas concretas sin ruido innecesario."
+      },
+      {
+        "title": "Ofertas compartidas de primera mano",
+        "description": "Vacantes que publican directamente los líderes técnicos de los equipos antes de abrir procesos masivos."
+      },
+      {
+        "title": "Charlas y feedback de código",
+        "description": "Revisiones de pull requests entre pares, debates de arquitectura y sesiones técnicas abiertas."
+      }
+    ],
+    "panel": {
+      "title": "Canales de la comunidad",
+      "badge": "Explorador de canales"
+    },
+    "channels": [
+      {
+        "name": "networking",
+        "description": "Conexión directa entre builders y profesionales del sector."
+      },
+      {
+        "name": "desarrollo",
+        "description": "Frontend, backend y arquitectura de software sin rodeos."
+      },
+      {
+        "name": "datos-e-ia",
+        "description": "Machine learning, pipelines de datos y modelos aplicados."
+      },
+      {
+        "name": "ciberseguridad",
+        "description": "Hardening, auditorías técnicas y análisis de vulnerabilidades."
+      },
+      {
+        "name": "producto-y-diseno",
+        "description": "Sistemas de diseño, UX técnica y definición de producto."
+      },
+      {
+        "name": "infra-y-devops",
+        "description": "CI/CD, contenedores, cloud e infraestructura como código."
+      },
+      {
+        "name": "portfolios",
+        "description": "Muestra tus repositorios y proyectos con feedback constructivo."
+      },
+      {
+        "name": "ofertas-trabajo",
+        "description": "Vacantes técnicas directas sin intermediarios ni filtros ATS."
+      }
+    ],
+    "cta": "Unirse a la comunidad en Discord"
+  },
   "noticias": {
     "eyebrow": "Noticias",
     "titleLead": "Lo que se mueve en el código ",
