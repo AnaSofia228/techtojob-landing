@@ -424,3 +424,22 @@ export function MonitorGlyph({ className = "h-4 w-4" }: IconProps) {
     </svg>
   );
 }
+
+/** Arrow right icon (Lucide arrow-right). */
+export function ArrowGlyph({ className = "h-4 w-4" }: IconProps) {
+  return (
+    <svg
+      viewBox="0 0 24 24"
+      className={`${className} shrink-0`}
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      aria-hidden="true"
+    >
+      <path d="M5 12h14" />
+      <path d="m12 5 7 7-7 7" />
+    </svg>
+  );
+}
