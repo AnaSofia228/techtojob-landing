@@ -10,9 +10,11 @@
  * Server Component: no state, no interactivity beyond plain markup.
  */
 import { LinkedInGlyph } from "@/components/ui/icons";
-import { messages } from "@/lib/content";
+import { getMessages } from "next-intl/server";
+import { asMessages } from "@/lib/messages";
 
-export function Testimonials() {
+export async function Testimonials() {
+  const messages = asMessages(await getMessages());
   const { eyebrow, titleLead, titleAccent, subtitle, items } =
     messages.testimonios;
 

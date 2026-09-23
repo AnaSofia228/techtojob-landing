@@ -7,10 +7,12 @@
  * All copy comes from the i18n catalog; submit logic is intentionally pending.
  */
 import { useId, useState, type FormEvent } from "react";
+import { useMessages } from "next-intl";
+import { asMessages } from "@/lib/messages";
 import { LockGlyph, MailGlyph } from "@/components/ui/icons";
-import { messages } from "@/lib/content";
 
 export function Newsletter() {
+  const messages = asMessages(useMessages());
   const { eyebrow, title, subtitle, emailLabel, emailPlaceholder, cta, trust } =
     messages.newsletter;
   const [email, setEmail] = useState("");

@@ -16,7 +16,8 @@ import {
   ScaleGlyph,
   SettingsGlyph,
 } from "@/components/ui/icons";
-import { messages } from "@/lib/content";
+import { getMessages } from "next-intl/server";
+import { asMessages } from "@/lib/messages";
 import { SOCIAL_LINKS } from "@/lib/site";
 
 /** Public judging criteria of the running tournament (order as designed). */
@@ -29,7 +30,8 @@ const CRITERIA = [
 /** Numbered rhythm of every tournament. */
 const STEP_KEYS = ["01", "02", "03", "04"] as const;
 
-export function Tournaments() {
+export async function Tournaments() {
+  const messages = asMessages(await getMessages());
   const { eyebrow, titleLead, titleAccent, subtitle, highlight, current, steps } =
     messages.torneos;
 

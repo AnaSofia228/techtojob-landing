@@ -8,10 +8,12 @@
 import { Button } from "@/components/ui/Button";
 import { DiscordGlyph } from "@/components/ui/icons";
 import { ClosingGridBackground } from "@/components/sections/ClosingGridBackground";
-import { messages } from "@/lib/content";
+import { getMessages } from "next-intl/server";
+import { asMessages } from "@/lib/messages";
 import { SOCIAL_LINKS } from "@/lib/site";
 
-export function Closing() {
+export async function Closing() {
+  const messages = asMessages(await getMessages());
   const { titleLead, titleAccent, subtitle, cta } = messages.cierre;
 
   return (

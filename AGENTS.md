@@ -17,7 +17,7 @@ This block is written and re-added by `next dev` — verify at `node_modules/nex
 ## 1. Stack fijo (no improvisar, no añadir dependencias)
 - Next.js **16.3.5** App Router con directorio `src/`, React **19.2.8**, TypeScript 5 (`strict`), ESLint 9 (`core-web-vitals` + TS).
 - Tailwind CSS **v4 CSS-first**: los tokens viven en `src/app/globals.css` (`:root` con `--ttj-*` + `@theme inline`). **No crear `tailwind.config.js`**; las directivas `@theme`/`@import` son válidas (VS Code ya silenciado en `.vscode/settings.json`).
-- **Cero kits de UI externos** (nada de MUI/Ant/shadcn) y cero dependencias de runtime nuevas sin acuerdo previo. Todo componente es propio.
+- **Cero kits de UI externos** (nada de MUI/Ant/shadcn) y cero dependencias de runtime nuevas sin acuerdo previo. Todo componente es propio. **Excepción acordada:** `next-intl` (i18n con rutas `app/[locale]`).
 - Tipografía: Sora 400/600/700 vía `next/font/google` (ya cargada en `layout.tsx` como `--font-sora`).
 
 ## 2. Tokens de diseño (nunca hex sueltos en componentes)
@@ -33,12 +33,14 @@ This block is written and re-added by `next dev` — verify at `node_modules/nex
 - Texto secundario sobre oscuro: `text-canvas/70`–`/80`. Hover de enlaces de nav: `hover:text-accent` + subrayado animado (`after:scale-x`), transición ≥ 300ms, nada brusco.
 
 ## 3. Contenido e i18n (contrato duro)
-- **Todo texto visible vive en `src/messages/es.json`**, tipado en `src/types/content.ts`, accedido vía `messages` (`@/lib/content`). **Nunca hardcodear copy en componentes.** Añadir clave = añadir tipo.
+- **i18n con `next-intl` y rutas `app/[locale]`** (`localePrefix: "always"`): locales `es` (por defecto) y `en`. Config en `src/i18n/{routing,request,navigation}.ts` + `src/proxy.ts` (convención `proxy` de Next 16, antes `middleware`).
+- **Todo texto visible vive en `src/messages/es.json` y `src/messages/en.json`** (mismas claves), tipado en `src/types/content.ts`. **Nunca hardcodear copy en componentes.** Añadir clave = añadir a ambos catálogos + el tipo.
+- **Acceso a textos:** Client Components → `const messages = asMessages(useMessages())`; Server Components (`async`) → `const messages = asMessages(await getMessages())`. Helper: `src/lib/messages.ts`.
 - Tono: tuteo («tú»), frases cortas, directo. **Prohibidas:** sinergia, ecosistema, revolucionar, solución integral, potenciar, disrupción. **Sin promesas falsas** ni métricas inventadas. «Gratis» solo en cuerpo explicativo, nunca en titulares.
 - Endpoints fijos (usar `SOCIAL_LINKS` de `src/lib/site.ts`, nunca URLs sueltas): Discord `https://discord.gg/h9FFgKdkRd`, LinkedIn, X e Instagram `techtojob`. Marca exacta: **TechToJob** (una palabra).
 
 ## 4. Estructura de código
-- **Secciones** (`src/components/sections/`): stubs `<section id="..." aria-label={messages.sections.x} />`; los IDs son exactos e inmutables: `hero, como-funciona, talento, empresas, torneos, comunidad, testimonios, noticias, newsletter, cierre, footer`.
+- **Secciones** (`src/components/sections/`): `<section id="..." aria-label={messages.sections.x} />`; los IDs son exactos e inmutables: `hero, como-funciona, talento, empresas, torneos, comunidad, testimonios, noticias, newsletter, cierre, footer`. La página vive en `src/app/[locale]/page.tsx` y el layout raíz en `src/app/[locale]/layout.tsx`.
 - **Kit UI** (`src/components/ui/`): `Button` (variantes `primary`/`secondary`, tamaños `md/lg`, renderiza `<a>` con `href` o `<button>`), `icons.tsx` (glifos sociales SVG; no pegar SVG inline en otros componentes) y `src/lib/cn.ts`.
 - **Marca:** assets oficiales en `public/` — `Simbolo*` (isotipo), `v1*` (horizontal), `v2*` (apilado) × `Positivo/Negativo/Black/Degradado`. Sobre fondos oscuros usar la variante **Negativo** con `next/image` + `width/height` explícitos (v1: 4619×684 · v2: 2558×1418 · Símbolo: 1151×1151). Nombres ASCII siempre (nada de tildes en archivos).
 - **Anclas:** no añadir `scroll-mt` a las secciones; `html { scroll-padding-top: var(--ttj-header-offset) }` ya compensa el header sticky (y el scroll suave está bajo `prefers-reduced-motion`).
@@ -59,8 +61,8 @@ This block is written and re-added by `next dev` — verify at `node_modules/nex
 - En los docs, listar commits **por mensaje, no por SHA** (los SHAs cambian en cada rebase).
 - Si cambias una convención, actualiza `docs/feature-*.md` y este archivo en el mismo cambio.
 
-## 7. SEO (pendiente de implementar en `layout.tsx` / `site.ts`)
-- `<title>` 50–60 caracteres · `<meta name="description">` 150–160 · OpenGraph + Twitter Cards con imagen 1200×630 · JSON-LD `Organization` con logo, URL y `sameAs` sociales. Objetivo: SEO Score 100.
+## 7. SEO (implementado en `app/[locale]/layout.tsx`)
+- `<title>`/`<meta name="description">` localizados vía `generateMetadata`, `<html lang>` por locale y `alternates.languages` (`hreflang`) para `/es` y `/en`. Objetivo: SEO Score 100 (pendiente: OpenGraph/Twitter Cards con imagen 1200×630 y JSON-LD `Organization`).
 
 ## 8. Checklist por tarea
 1. Lee el PRD (sección correspondiente) y el doc de la rama.

@@ -1,7 +1,8 @@
 {
   "_comment": "Spanish UI copy catalog for the TechToJob landing. All user-facing text lives here (never hardcoded in components) and is typed by src/types/content.ts. Values are kept in Spanish; add locales by creating sibling files such as en.json.",
   "site": {
-    "name": "TechToJob"
+    "name": "TechToJob",
+    "description": "TechToJob es la comunidad donde developers y builders demuestran su nivel con código real y las empresas técnicas los descubren sin filtros automáticos."
   },
   "nav": {
     "primary": {
@@ -26,7 +27,8 @@
       "more": "Secciones adicionales",
       "menu": "Menú de navegación",
       "openMenu": "Abrir menú de navegación",
-      "closeMenu": "Cerrar menú de navegación"
+      "closeMenu": "Cerrar menú de navegación",
+      "language": "Idioma"
     }
   },
   "footer": {

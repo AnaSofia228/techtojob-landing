@@ -19,10 +19,12 @@ import {
   type IconProps,
 } from "@/components/ui/icons";
 import { cn } from "@/lib/cn";
-import { messages } from "@/lib/content";
+import { useMessages } from "next-intl";
+import { asMessages } from "@/lib/messages";
+import type { Messages } from "@/types/content";
 import { SOCIAL_LINKS } from "@/lib/site";
 
-type BadgeKey = keyof typeof messages.hero.badges;
+type BadgeKey = keyof Messages["hero"]["badges"];
 
 const BADGE_KEYS: BadgeKey[] = ["code", "ats", "prizes"];
 
@@ -49,6 +51,7 @@ const TEAL = "132, 192, 191";
 type Ripple = { x: number; y: number; radius: number; opacity: number };
 
 export function Hero() {
+  const messages = asMessages(useMessages());
   const { title, titleAccent, subtitle, badges, cta, ctaSecondary, dashboard } =
     messages.hero;
 

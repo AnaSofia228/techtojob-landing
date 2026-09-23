@@ -39,6 +39,7 @@ export type Messages = {
   _comment?: string;
   site: {
     name: string;
+    description: string;
   };
   nav: {
     primary: Record<string, string>;
@@ -54,6 +55,7 @@ export type Messages = {
       menu: string;
       openMenu: string;
       closeMenu: string;
+      language: string;
     };
   };
   hero: {
