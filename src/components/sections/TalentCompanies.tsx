@@ -25,7 +25,8 @@ import {
   type IconProps,
 } from "@/components/ui/icons";
 import { cn } from "@/lib/cn";
-import { messages } from "@/lib/content";
+import { useMessages } from "next-intl";
+import { asMessages } from "@/lib/messages";
 import { SOCIAL_LINKS } from "@/lib/site";
 
 type TabId = "talent" | "companies";
@@ -43,6 +44,7 @@ const TAB_HASH: Record<TabId, string> = {
 };
 
 export function TalentCompanies() {
+  const messages = asMessages(useMessages());
   const { eyebrow, titleLead, titleAccent, subtitle, tabsLabel, tabs, talent, companies } =
     messages.talentCompanies;
   const [activeTab, setActiveTab] = useState<TabId>("talent");

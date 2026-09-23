@@ -11,9 +11,11 @@
  * Server Component: no state, no interactivity beyond plain links.
  */
 import { ArrowGlyph } from "@/components/ui/icons";
-import { messages } from "@/lib/content";
+import { getMessages } from "next-intl/server";
+import { asMessages } from "@/lib/messages";
 
-export function News() {
+export async function News() {
+  const messages = asMessages(await getMessages());
   const { eyebrow, titleLead, titleAccent, subtitle, items } =
     messages.noticias;
 

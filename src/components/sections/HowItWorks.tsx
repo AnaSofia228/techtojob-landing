@@ -17,7 +17,8 @@ import {
   EyeGlyph,
   ShieldGlyph,
 } from "@/components/ui/icons";
-import { messages } from "@/lib/content";
+import { getMessages } from "next-intl/server";
+import { asMessages } from "@/lib/messages";
 import { SOCIAL_LINKS } from "@/lib/site";
 
 const STEPS = [
@@ -26,7 +27,8 @@ const STEPS = [
   { key: "03", Icon: EyeGlyph },
 ] as const;
 
-export function HowItWorks() {
+export async function HowItWorks() {
+  const messages = asMessages(await getMessages());
   const { eyebrow, titleLead, titleAccent, subtitle, steps, compare, banner } =
     messages.howItWorks;
 

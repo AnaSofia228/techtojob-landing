@@ -11,8 +11,10 @@
 import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
 import { DiscordGlyph } from "@/components/ui/icons";
-import { moreNav, primaryNav } from "@/data/navigation";
-import { messages } from "@/lib/content";
+import { LocaleSwitcher } from "@/components/layout/LocaleSwitcher";
+import { getMoreNav, getPrimaryNav } from "@/data/navigation";
+import { useMessages } from "next-intl";
+import { asMessages } from "@/lib/messages";
 import { SOCIAL_LINKS } from "@/lib/site";
 
 const MORE_BUTTON_ID = "boton-mas";
@@ -82,6 +84,9 @@ function CloseGlyph() {
 }
 
 export function Header() {
+  const messages = asMessages(useMessages());
+  const primaryNav = getPrimaryNav(messages);
+  const moreNav = getMoreNav(messages);
   const [moreOpen, setMoreOpen] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
 
@@ -227,6 +232,7 @@ export function Header() {
             <DiscordGlyph className="h-4 w-4" />
             <span>{messages.nav.cta}</span>
           </a>
+          <LocaleSwitcher />
           <a
             href={SOCIAL_LINKS.discord}
             target="_blank"

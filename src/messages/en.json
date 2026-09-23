@@ -1,0 +1,406 @@
+{
+  "_comment": "English UI copy catalog for the TechToJob landing. Mirrors src/messages/es.json and is typed by src/types/content.ts.",
+  "site": {
+    "name": "TechToJob",
+    "description": "TechToJob is the community where developers and builders prove their level with real code and technical companies discover them without automated filters."
+  },
+  "nav": {
+    "primary": {
+      "como-funciona": "How it works",
+      "talento": "Talent",
+      "empresas": "Companies",
+      "torneos": "Tournaments",
+      "comunidad": "Community"
+    },
+    "more": {
+      "label": "More",
+      "items": {
+        "testimonios": "Testimonials",
+        "noticias": "News",
+        "newsletter": "Newsletter"
+      }
+    },
+    "cta": "Join Discord",
+    "aria": {
+      "logo": "TechToJob, back to top",
+      "primary": "Main navigation",
+      "more": "More sections",
+      "menu": "Navigation menu",
+      "openMenu": "Open navigation menu",
+      "closeMenu": "Close navigation menu",
+      "language": "Language"
+    }
+  },
+  "footer": {
+    "tagline": "Technical talent connected by what you build, not by your CV.",
+    "labels": {
+      "como-funciona": "How it works",
+      "talento": "Talent",
+      "torneos": "Tournaments",
+      "empresas": "Companies",
+      "comunidad": "Community",
+      "discord": "Join Discord",
+      "testimonios": "Testimonials",
+      "noticias": "News",
+      "newsletter": "Newsletter",
+      "legal-1": "Legal notice",
+      "legal-2": "Privacy policy",
+      "legal-3": "Terms of use"
+    },
+    "columns": [
+      {
+        "heading": "Talent",
+        "links": ["como-funciona", "talento", "torneos"]
+      },
+      {
+        "heading": "Companies",
+        "links": ["empresas", "talento", "comunidad"]
+      },
+      {
+        "heading": "Community",
+        "links": ["discord", "testimonios", "noticias", "newsletter"]
+      },
+      {
+        "heading": "Legal",
+        "links": ["legal-1", "legal-2", "legal-3"],
+        "note": "Coming soon"
+      }
+    ],
+    "social": "Social",
+    "networks": {
+      "discord": "Discord",
+      "linkedin": "LinkedIn",
+      "x": "X (Twitter)",
+      "instagram": "Instagram"
+    },
+    "copyright": "All rights reserved.",
+    "accessibility": "Accessibility: built to meet WCAG AA — keyboard navigable, with visible focus and responsive across mobile, tablet and desktop."
+  },
+  "howItWorks": {
+    "eyebrow": "How it works",
+    "titleLead": "Opportunities come from writing code together, ",
+    "titleAccent": "not from filling in forms",
+    "subtitle": "Stop piling up ignored applications. Here you build real challenges with other devs. You work in the open and prove your level with real code.",
+    "steps": {
+      "01": {
+        "title": "Join the community",
+        "description": "Join the official Discord with no cost and no gatekeeping. Introduce yourself in the welcome channel and connect with other builders from minute one.",
+        "footnote": "Open access, no sign-up required"
+      },
+      "02": {
+        "title": "Take part in tournaments and projects",
+        "description": "Pick an open challenge or join a group repository. Send pull requests, discuss architecture and get technical feedback from active peers.",
+        "footnote": "Open code, visible on GitHub"
+      },
+      "03": {
+        "title": "Companies see your code live",
+        "description": "Tech leads and recruiters watch how you solve problems in a team. If you fit their openings, they reach out directly without automated filters.",
+        "footnote": "Engineer to engineer"
+      }
+    },
+    "compare": {
+      "headerTitle": "Compare the hiring process",
+      "headerNote": "No magic shortcuts · Just facts",
+      "traditional": {
+        "title": "The frustrating traditional path",
+        "items": [
+          "Endless forms that ask you to rewrite your CV over and over.",
+          "ATS filters and automated screens that discard profiles without opening a link.",
+          "Weeks or months of total silence without knowing what failed or how to improve."
+        ]
+      },
+      "techtojob": {
+        "title": "The TechToJob path",
+        "items": [
+          "Code visible in real repositories: commits, pull requests and reviews.",
+          "Honest feedback from other developers to sharpen your technical decisions.",
+          "Real opportunities that come from collaborating, not from mass-applying."
+        ]
+      }
+    },
+    "banner": {
+      "strong": "No endless forms. No trick tests.",
+      "rest": "You take part at your own pace, whenever you can contribute.",
+      "cta": "Start on Discord"
+    }
+  },
+  "hero": {
+    "title": "The community where you show what you know",
+    "titleAccent": "And companies come to see you",
+    "subtitle": "Stop sending applications nobody reads. Not one more filter discarding your code without opening it. Here opportunities come from building in public, collaborating in real tournaments and getting feedback from active developers.",
+    "badges": {
+      "code": "Code reviewed live",
+      "ats": "No ATS filter bias",
+      "prizes": "Challenges and prizes"
+    },
+    "cta": "Join Discord",
+    "ctaSecondary": "Explore tournaments",
+    "dashboard": {
+      "label": "Platform live status",
+      "session": "session: techtojob/discord-main",
+      "status": "Active",
+      "prompt": "$ techtojob init --role junior-builder",
+      "response": "[OK] Filters removed • Pull request portfolio synced",
+      "activityLabel": "LIVE ACTIVITY",
+      "tournamentStatus": "Tournament #02 open",
+      "tournamentPrefix": "Tournament #02:",
+      "tournamentName": "TechToJob",
+      "tournamentSubtitle": "Landing Page",
+      "tournamentTime": "1 week ago",
+      "tags": {
+        "frontend": "FrontEnd",
+        "stack": "Next.js + TailwindCSS"
+      },
+      "footerNote": "No endless forms",
+      "footerVerified": "Verified community"
+    }
+  },
+  "talentCompanies": {
+    "eyebrow": "BUILD OR HIRE",
+    "titleLead": "Two sides of the same table: ",
+    "titleAccent": "visible talent and technical companies",
+    "subtitle": "Whether you're looking for your next opportunity or you need to hire resourceful developers, we cut the bureaucracy to connect you directly through code.",
+    "tabsLabel": "Choose between talent or companies",
+    "tabs": {
+      "talent": "Talent",
+      "companies": "Companies"
+    },
+    "talent": {
+      "eyebrow": "For developers & builders",
+      "title": "Publish your profile, stack and availability",
+      "description": "No automated ATS filters discarding you by keywords. You don't need to be a senior with 5 years of experience for people to value what you build. Show your repositories, your real commits and your availability, completely free.",
+      "badges": [
+        "No ATS filter",
+        "Junior and mid profiles welcome",
+        "100% open and free access"
+      ],
+      "cta": "Create builder profile",
+      "ctaNote": "No fees or middlemen"
+    },
+    "companies": {
+      "eyebrow": "For CTOs, Tech Leads & Technical Recruiters",
+      "title": "Post what you're looking for and access profiles",
+      "description": "Watch how they solve technical problems before hiring; don't settle for a padded CV on paper. Less blind screening and far more real context by seeing their code in tournaments and collaborative projects.",
+      "badges": [
+        "Code verified in repositories",
+        "Fewer hours of blind screening",
+        "Direct contact with builders"
+      ],
+      "cta": "Explore talent or post a role",
+      "ctaNote": "Technical evaluation without middlemen"
+    }
+  },
+  "torneos": {
+    "eyebrow": "Tournaments",
+    "titleLead": "Real challenges with real code, ",
+    "titleAccent": "not tutorial exercises",
+    "subtitle": "Learn by collaborating on challenges with real specs. Walk away with verifiable projects you can defend in interviews and get known by the community and technical companies.",
+    "highlight": {
+      "strong": "The most real proof: this very site you're looking at was born from a TechToJob tournament",
+      "rest": "Here you don't build mockups to forget in a drawer. You build real projects that ship to production and solve real needs."
+    },
+    "current": {
+      "badge": "Active tournament",
+      "status": "In progress",
+      "edition": "Community edition",
+      "meta": "Public repo & open review",
+      "title": "Tournament #02 · Official TechToJob landing page",
+      "description": "Design and build the community's official landing page, meeting strict standards for performance, accessibility, semantic code and visual hierarchy.",
+      "period": "Sep 21 – Oct 12 · Submissions open until Oct 5",
+      "criteria": {
+        "criteria": {
+          "title": "Public criteria",
+          "description": "Transparent jury with a rubric known in advance: code, design, SEO and accessibility."
+        },
+        "production": {
+          "title": "Real production",
+          "description": "The winning entry ships as the community's official site."
+        },
+        "review": {
+          "title": "Open review",
+          "description": "Honest, constructive feedback between participants and technical members."
+        }
+      },
+      "join": {
+        "label": "Join the tournament in progress",
+        "description": "All tracking, questions and submissions are handled openly in the tournaments channel.",
+        "cta": "Join in Discord"
+      }
+    },
+    "steps": {
+      "01": {
+        "title": "The challenge opens",
+        "description": "Clear specs, technical requirements and a defined deadline, published well in advance."
+      },
+      "02": {
+        "title": "You code and collaborate",
+        "description": "You develop in the open, ask questions and share your progress in the Discord channels."
+      },
+      "03": {
+        "title": "Jury with a public rubric",
+        "description": "Transparent evaluation with no ambiguity, based on objective technical and functional criteria."
+      },
+      "04": {
+        "title": "It actually ships",
+        "description": "The winning work comes to life in the real world and becomes your best calling card."
+      }
+    }
+  },
+  "testimonios": {
+    "eyebrow": "Testimonials",
+    "titleLead": "What the people already writing ",
+    "titleAccent": "code inside say",
+    "subtitle": "Real experiences inside the Discord. No marketing filters or inflated metrics. Qualitative opinions from builders who build in the open.",
+    "items": [
+      {
+        "initials": "AM",
+        "name": "Álvaro M.",
+        "role": "Junior Frontend · React",
+        "quote": "“Finally a place where they review how I structure my pull requests instead of discarding me automatically for not having 3 years of prior experience.”",
+        "tag": "Discord Builder"
+      },
+      {
+        "initials": "SG",
+        "name": "Sara G.",
+        "role": "Backend Builder · Node",
+        "quote": "“The tournament gave me a deployed repository with clean commits that I could explain point by point in my last technical interview.”",
+        "tag": "Tournament #01"
+      },
+      {
+        "initials": "MR",
+        "name": "Mateo R.",
+        "role": "Full Stack Dev · Next",
+        "quote": "“In the Discord channel they helped me solve an architecture problem in 20 minutes with honest explanations from developers who are actively working.”",
+        "tag": "Channel #devops"
+      },
+      {
+        "initials": "EV",
+        "name": "Elena V.",
+        "role": "Tech Lead & Mentor",
+        "quote": "“Nobody asks you to dress up your CV. You upload your repos, take part in the challenges and people see how you really work in a team.”",
+        "tag": "Active mentor"
+      }
+    ]
+  },
+  "comunidad": {
+    "eyebrow": "COMMUNITY",
+    "titleLead": "The best opportunities aren't posted, ",
+    "titleAccent": "you hear about them",
+    "subtitle": "People from the industry sharing challenges, feedback and openings in real time. Zero corporate posturing",
+    "features": [
+      {
+        "title": "Specialized topic channels",
+        "description": "Spaces organized by technology and discipline to solve specific questions without unnecessary noise."
+      },
+      {
+        "title": "First-hand shared openings",
+        "description": "Roles posted directly by the teams' technical leads before mass hiring processes open."
+      },
+      {
+        "title": "Talks and code feedback",
+        "description": "Peer pull request reviews, architecture debates and open technical sessions."
+      }
+    ],
+    "panel": {
+      "title": "Community channels",
+      "badge": "Channel explorer"
+    },
+    "channels": [
+      {
+        "name": "networking",
+        "description": "Direct connection between builders and industry professionals."
+      },
+      {
+        "name": "development",
+        "description": "Frontend, backend and software architecture with no detours."
+      },
+      {
+        "name": "data-and-ai",
+        "description": "Machine learning, data pipelines and applied models."
+      },
+      {
+        "name": "cybersecurity",
+        "description": "Hardening, technical audits and vulnerability analysis."
+      },
+      {
+        "name": "product-and-design",
+        "description": "Design systems, technical UX and product definition."
+      },
+      {
+        "name": "infra-and-devops",
+        "description": "CI/CD, containers, cloud and infrastructure as code."
+      },
+      {
+        "name": "portfolios",
+        "description": "Show your repositories and projects with constructive feedback."
+      },
+      {
+        "name": "job-openings",
+        "description": "Direct technical roles with no middlemen and no ATS filters."
+      }
+    ],
+    "cta": "Join the community on Discord"
+  },
+  "newsletter": {
+    "eyebrow": "SUBSCRIBE",
+    "title": "The sector and community highlights, straight to your inbox",
+    "subtitle": "Alerts for new tournaments, roles shared directly by members and technical analysis with no filler. No empty promo emails and no trick courses.",
+    "emailLabel": "Your email",
+    "emailPlaceholder": "you@email.com",
+    "cta": "I want the updates",
+    "trust": "Zero spam. Unsubscribe with one click whenever you want."
+  },
+  "noticias": {
+    "eyebrow": "News",
+    "titleLead": "What's moving in the code ",
+    "titleAccent": "and in the community",
+    "subtitle": "Updates on active challenges, changes in the industry and resources made by and for the community. No hype, no filler.",
+    "items": [
+      {
+        "tag": "Tournaments",
+        "date": "Oct 18, 2024",
+        "title": "Tournament #02 underway: designing the official landing page, open to production",
+        "excerpt": "The development phase kicks off for TechToJob's new site. Public rubric, open code and a real deployment for the winning entry.",
+        "cta": "Read the Tournament #02 rules",
+        "href": "#torneos",
+        "highlight": true
+      },
+      {
+        "tag": "Community",
+        "date": "Oct 14, 2024",
+        "title": "New #code-reviews channel on Discord: peer feedback before you publish",
+        "excerpt": "We're opening a dedicated space to review pull requests from personal projects and sharpen code quality in the open.",
+        "cta": "Explore how code reviews work",
+        "href": "#comunidad"
+      },
+      {
+        "tag": "Industry",
+        "date": "Oct 09, 2024",
+        "title": "The rise of hiring based on visible code over the blind CV",
+        "excerpt": "More and more technical teams are dropping keyword screening to focus on how you reason and collaborate in real repositories.",
+        "cta": "Read the analysis on technical hiring",
+        "href": "#empresas"
+      }
+    ]
+  },
+  "cierre": {
+    "titleLead": "The next step isn't sending another CV, ",
+    "titleAccent": "it's jumping in and writing code",
+    "subtitle": "The community is open, the challenges are running and projects get built in public. All that's missing is you joining the conversation.",
+    "cta": "Join the TechToJob Discord"
+  },
+  "sections": {
+    "header": "Header",
+    "hero": "Hero",
+    "como-funciona": "How it works",
+    "talento": "Talent",
+    "empresas": "Companies",
+    "torneos": "Tournaments",
+    "comunidad": "Community",
+    "testimonios": "Testimonials",
+    "noticias": "News",
+    "newsletter": "Newsletter",
+    "cierre": "Closing",
+    "footer": "Footer"
+  }
+}

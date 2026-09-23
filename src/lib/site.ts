@@ -1,12 +1,10 @@
 /**
- * Site-wide constants and base metadata.
- * Centralizes the brand name, canonical URL environment variable, official
- * social links from the PRD and the default Next.js metadata object.
+ * Site-wide constants.
+ * Centralizes the brand name, canonical URL and the official social links
+ * from the PRD. Locale-dependent metadata lives in the app layout.
  */
-import type { Metadata } from "next";
-import { messages } from "@/lib/content";
 
-export const SITE_NAME = messages.site.name;
+export const SITE_NAME = "TechToJob";
 
 export const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "";
 
@@ -18,8 +16,3 @@ export const SOCIAL_LINKS = {
 } as const;
 
 export type SocialNetwork = keyof typeof SOCIAL_LINKS;
-
-export const siteMetadata: Metadata = {
-  title: SITE_NAME,
-  description: "TODO: descripción de TechToJob (150-160 caracteres).",
-};

@@ -13,7 +13,8 @@ import {
   HashGlyph,
   type IconProps,
 } from "@/components/ui/icons";
-import { messages } from "@/lib/content";
+import { getMessages } from "next-intl/server";
+import { asMessages } from "@/lib/messages";
 import { SOCIAL_LINKS } from "@/lib/site";
 
 const FEATURE_ICONS: ComponentType<IconProps>[] = [
@@ -22,7 +23,8 @@ const FEATURE_ICONS: ComponentType<IconProps>[] = [
   CodeGlyph,
 ];
 
-export function Community() {
+export async function Community() {
+  const messages = asMessages(await getMessages());
   const {
     eyebrow,
     titleLead,

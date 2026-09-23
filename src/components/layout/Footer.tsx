@@ -13,11 +13,13 @@ import {
   XGlyph,
   type IconProps,
 } from "@/components/ui/icons";
-import { messages } from "@/lib/content";
+import { getMessages } from "next-intl/server";
+import { asMessages } from "@/lib/messages";
+import type { Messages } from "@/types/content";
 import { SITE_NAME, SOCIAL_LINKS } from "@/lib/site";
 
 const socials: {
-  name: keyof typeof messages.footer.networks;
+  name: keyof Messages["footer"]["networks"];
   href: string;
   Icon: (props: IconProps) => ReactElement;
 }[] = [
@@ -27,7 +29,8 @@ const socials: {
   { name: "instagram", href: SOCIAL_LINKS.instagram, Icon: InstagramGlyph },
 ];
 
-export function Footer() {
+export async function Footer() {
+  const messages = asMessages(await getMessages());
   const year = new Date().getFullYear();
 
   return (
