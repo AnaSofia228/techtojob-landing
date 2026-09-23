@@ -148,6 +148,19 @@ export type Messages = {
       { title: string; description: string }
     >;
   };
+  testimonios: {
+    eyebrow: string;
+    titleLead: string;
+    titleAccent: string;
+    subtitle: string;
+    items: {
+      initials: string;
+      name: string;
+      role: string;
+      quote: string;
+      tag: string;
+    }[];
+  };
   footer: {
     tagline: string;
     labels: Record<string, string>;
