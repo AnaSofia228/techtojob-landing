@@ -8,12 +8,11 @@ import { Footer } from "@/components/layout/Footer";
 import {
   Closing,
   Community,
-  Companies,
   Hero,
   HowItWorks,
   News,
   Newsletter,
-  Talent,
+  TalentCompanies,
   Testimonials,
   Tournaments,
 } from "@/components/sections";
@@ -25,8 +24,7 @@ export default function Home() {
       <main>
         <Hero />
         <HowItWorks />
-        <Talent />
-        <Companies />
+        <TalentCompanies />
         <Tournaments />
         <Community />
         <Testimonials />

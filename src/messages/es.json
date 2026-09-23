@@ -153,6 +153,41 @@
       "footerVerified": "Comunidad verificada"
     }
   },
+  "talentCompanies": {
+    "eyebrow": "PARTICIPA O CONTRATA",
+    "titleLead": "Dos lados de la misma mesa: ",
+    "titleAccent": "talento visible y empresas técnicas",
+    "subtitle": "Tanto si estás buscando tu próxima oportunidad como si necesitas contratar a desarrolladores resolutivos, eliminamos la burocracia para conectar directamente a través del código.",
+    "tabsLabel": "Elige entre talento o empresas",
+    "tabs": {
+      "talent": "Talento",
+      "companies": "Empresas"
+    },
+    "talent": {
+      "eyebrow": "Para desarrolladores & builders",
+      "title": "Publica tu perfil, stack y disponibilidad",
+      "description": "Sin filtros automáticos ATS que descarten por palabras clave. No hace falta ser senior con 5 años de experiencia para que valoren lo que programas. Muestra tus repositorios, tus commits reales y tu disponibilidad de forma totalmente gratis.",
+      "badges": [
+        "Sin filtro ATS",
+        "Perfiles junior y mid bienvenidos",
+        "Acceso 100% libre y gratis"
+      ],
+      "cta": "Crear perfil de builder",
+      "ctaNote": "Sin comisiones ni intermediarios"
+    },
+    "companies": {
+      "eyebrow": "Para CTOs, Tech Leads & Reclutadores Técnicos",
+      "title": "Publica lo que buscas y accede a perfiles",
+      "description": "Observa cómo resuelven problemas técnicos antes de contratar, no te quedes solo con el papel de un CV inflado. Menos criba ciega de candidatos y mucho más contexto real viendo su código en torneos y proyectos colaborativos.",
+      "badges": [
+        "Código verificado en repositorios",
+        "Menos horas de criba ciega",
+        "Contacto directo con builders"
+      ],
+      "cta": "Explorar talento o publicar vacante",
+      "ctaNote": "Evaluación técnica sin intermediarios"
+    }
+  },
   "sections": {
     "header": "Encabezado",
     "hero": "Hero",
