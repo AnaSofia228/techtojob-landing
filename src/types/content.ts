@@ -48,6 +48,27 @@ export type Messages = {
     };
   };
   sections: Record<SectionId, string>;
+  howItWorks: {
+    eyebrow: string;
+    titleLead: string;
+    titleAccent: string;
+    subtitle: string;
+    steps: Record<
+      "01" | "02" | "03",
+      { title: string; description: string; footnote: string }
+    >;
+    compare: {
+      headerTitle: string;
+      headerNote: string;
+      traditional: { title: string; items: string[] };
+      techtojob: { title: string; items: string[] };
+    };
+    banner: {
+      strong: string;
+      rest: string;
+      cta: string;
+    };
+  };
   footer: {
     tagline: string;
     labels: Record<string, string>;

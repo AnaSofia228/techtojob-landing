@@ -74,6 +74,54 @@
     "copyright": "Todos los derechos reservados.",
     "accessibility": "Accesibilidad: diseñado cumpliendo WCAG AA — navegable por teclado, con foco visible y responsive en móvil, tablet y escritorio."
   },
+  "howItWorks": {
+    "eyebrow": "Cómo funciona",
+    "titleLead": "Las oportunidades salen de picar código juntos, ",
+    "titleAccent": "no de rellenar formularios",
+    "subtitle": "Deja de acumular candidaturas ignoradas. Aquí programas retos con otros devs. Construyes en abierto y demuestras tu nivel con código real.",
+    "steps": {
+      "01": {
+        "title": "Entra a la comunidad",
+        "description": "Únete al Discord oficial sin coste ni barreras de entrada. Preséntate en el canal de bienvenida y conéctate con otros builders desde el primer minuto.",
+        "footnote": "Acceso libre sin registro previo"
+      },
+      "02": {
+        "title": "Participa en torneos y proyectos",
+        "description": "Elige un reto abierto o súmate a un repositorio grupal. Envía pull requests, debate arquitectura y recibe feedback técnico de compañeros activos.",
+        "footnote": "Código abierto y visible en GitHub"
+      },
+      "03": {
+        "title": "Las empresas ven tu código en vivo",
+        "description": "Líderes técnicos y reclutadores revisan cómo resuelves problemas en equipo. Si encajas con sus vacantes, te contactan directamente sin pasar por filtros automáticos.",
+        "footnote": "Trato de técnico a técnico"
+      }
+    },
+    "compare": {
+      "headerTitle": "Compara el proceso de búsqueda",
+      "headerNote": "Sin atajos mágicos · Solo hechos",
+      "traditional": {
+        "title": "El camino tradicional frustrante",
+        "items": [
+          "Formularios infinitos que piden reescribir tu CV una y otra vez.",
+          "Filtros ATS y cribas automáticas que descartan perfiles sin abrir un enlace.",
+          "Semanas o meses de silencio absoluto sin saber qué falló ni en qué mejorar."
+        ]
+      },
+      "techtojob": {
+        "title": "El camino en TechToJob",
+        "items": [
+          "Código visible en repositorios reales: commits, pull requests y reviews.",
+          "Feedback sincero de otros programadores para pulir tus decisiones técnicas.",
+          "Oportunidades reales que surgen al colaborar, no de enviar candidaturas en masa."
+        ]
+      }
+    },
+    "banner": {
+      "strong": "Sin formularios infinitos. Sin exámenes trampa.",
+      "rest": "Participas a tu propio ritmo cuando puedas aportar.",
+      "cta": "Empezar en Discord"
+    }
+  },
   "sections": {
     "header": "Encabezado",
     "hero": "Hero",

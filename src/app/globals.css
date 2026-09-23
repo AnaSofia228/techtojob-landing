@@ -72,6 +72,36 @@ html {
   scroll-padding-top: var(--ttj-header-offset);
 }
 
+/* Hover glow for interactive cards: teal border glow + deeper elevation
+ * shadow. Colors come from brand tokens (no loose hex in components). */
+.ttj-card {
+  transition:
+    transform 300ms ease-out,
+    border-color 300ms ease-out,
+    box-shadow 300ms ease-out,
+    color 300ms ease-out;
+}
+
+.ttj-card:hover {
+  transform: translateY(-2px) scale(1.01);
+  border-color: color-mix(in srgb, var(--ttj-accent) 60%, transparent);
+  box-shadow:
+    0 0 22px 2px color-mix(in srgb, var(--ttj-accent) 25%, transparent),
+    0 10px 24px -12px rgb(0 0 0 / 0.6);
+}
+
+/* On hover, promote the top-right glyph to brand teal. */
+.ttj-card:hover .ttj-card-icon {
+  color: var(--ttj-accent);
+}
+
+/* Keep the glow as feedback but drop the movement when motion is reduced. */
+@media (prefers-reduced-motion: reduce) {
+  .ttj-card:hover {
+    transform: none;
+  }
+}
+
 @media (prefers-reduced-motion: no-preference) {
   html {
     scroll-behavior: smooth;
