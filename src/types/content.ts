@@ -161,6 +161,16 @@ export type Messages = {
       tag: string;
     }[];
   };
+  comunidad: {
+    eyebrow: string;
+    titleLead: string;
+    titleAccent: string;
+    subtitle: string;
+    features: { title: string; description: string }[];
+    panel: { title: string; badge: string };
+    channels: { name: string; description: string }[];
+    cta: string;
+  };
   footer: {
     tagline: string;
     labels: Record<string, string>;
